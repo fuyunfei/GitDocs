@@ -1,0 +1,53 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{subcaption}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{bookmark}
+
+
+\usepackage[left=2.500cm, right=2.5cm, top=3.00cm, bottom=3.00cm]{geometry}
+
+\usepackage[export]{adjustbox}
+\usepackage{wrapfig}
+
+\hypersetup{
+	colorlinks=false,
+	pdfborder={0 0 0},
+}
+\graphicspath{ {./pic/} }
+\usepackage{array}
+\newcommand{\dd}[1]{\mathrm{d}#1}
+ 
+\title{From Brush Painting to Bas-relief }
+\author{Yunfei Fu}
+\date{ }
+ 
+\begin{document}
+ 
+\input{./sec/front.tex} 
+%\newpage  \input{./sec/abstract.tex} 
+ 
+\newpage  \tableofcontents
+\newpage  \listoffigures
+%\newpage  \listoftables
+
+\newpage  \input{./sec/introduction.tex} 
+\newpage  \input{./sec/Literature.tex}
+%\newpage  \input{./sec/Sfs.tex}
+%\newpage  \input{./sec/overview.tex}
+%\newpage  \input{./sec/layer.tex}
+\newpage  \input{./sec/extract.tex}
+%\newpage  \input{./sec/3Dstrokes.tex}
+%\newpage  \input{./sec/result.tex}
+%\newpage  \input{./sec/appendix.tex}
+%\newpage  \input{./sec/conclu.tex}
+%\newpage  \input{./sec/future.tex}
+\newpage  \bibliographystyle{unsrt}
+\bibliography{ref}
+
+\end{document}

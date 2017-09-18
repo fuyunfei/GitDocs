@@ -1,0 +1,6 @@
+\chapter{CONCLUSIONS }
+
+Bas-relief may be generated from both 3D models and 2D paintings. Our approach can effectively extract brush strokes from 2D paintings and generate the individual depth maps for bas-relief composition in 3D. Since the depth maps of brush strokes are independent of each other, the order and shape may be redefined by the users. It is suitable for Recomposition in bas-relief designs.
+Limitations In our implementation, we employ layer decomposition in order to split the overlapped brush strokes into different layers, so that the strokes can be easily segmented within one layer. However, the main challenge is the overlapped strokes may appear on the same layer. Rosemaling painting designs use subtle and vibrant colors to enhance the color contrast between adjacent brush strokes. Moreover, for a layered look, transparency is applied and is variable with a big scope. Thus, layer decomposition benefits the overlapped brush strokes separated on Rosemaling paintings. However, Chinese brush paintings do not emphasize the use of vibrant colors, even the adjacent strokes may share the same color in some paintings. The boundary of the overlapped brush strokes may be very blurred. This may result in stroke segmentation failure.
+
+

@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: unsrt.bst
+Database file #1: ref.bib
+Warning--can't use both volume and number fields in weyrich2007digital
+Warning--can't use both volume and number fields in richardt2014vectorising
+Warning--can't use both volume and number fields in mccann2012soft
+You've used 33 entries,
+            1791 wiz_defined-function locations,
+            645 strings with 9387 characters,
+and the built_in function-call counts, 10142 in all, are:
+= -- 979
+> -- 401
+< -- 24
++ -- 145
+- -- 112
+* -- 687
+:= -- 1457
+add.period$ -- 112
+call.type$ -- 33
+change.case$ -- 33
+chr.to.int$ -- 0
+cite$ -- 36
+duplicate$ -- 486
+empty$ -- 958
+format.name$ -- 112
+if$ -- 2376
+int.to.chr$ -- 0
+int.to.str$ -- 33
+missing$ -- 33
+newline$ -- 168
+num.names$ -- 33
+pop$ -- 108
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 292
+stack$ -- 0
+substring$ -- 768
+swap$ -- 201
+text.length$ -- 24
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 3
+while$ -- 108
+width$ -- 35
+write$ -- 384
+(There were 3 warnings)
