@@ -1,5 +1,7 @@
-\contentsline {chapter}{\numberline {1}INTRODUCTION}{3}{chapter.1}
-\contentsline {chapter}{\numberline {2}LAYER DECOMPOSITION}{6}{chapter.2}
-\contentsline {section}{\numberline {2.1}Identify Paint Colors}{6}{section.2.1}
-\contentsline {section}{\numberline {2.2}Layer Decomposition Scheme}{7}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Modified Layer Decomposition}{8}{subsection.2.2.1}
+\contentsline {chapter}{\numberline {1}INTRODUCTION}{5}{chapter.1}
+\contentsline {chapter}{\numberline {2}INTRODUCTION}{8}{chapter.2}
+\contentsline {section}{\numberline {2.1}Thesis Structure}{10}{section.2.1}
+\contentsline {chapter}{\numberline {3}LAYER DECOMPOSITION}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Identify Paint Colors}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}Layer Decomposition Scheme}{12}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Modified Layer Decomposition}{13}{subsection.3.2.1}

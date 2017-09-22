@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  20 SEP 2017 15:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  21 SEP 2017 20:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -798,157 +798,183 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 33.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./main.toc)
-\tf@toc=\write3
-\openout3 = `main.toc'.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./sec/abstract0.tex
+<./pic/overview.pdf, id=13, 1037.8775pt x 1271.75125pt>
+File: ./pic/overview.pdf Graphic file (type pdf)
 
+<use ./pic/overview.pdf>
+Package pdftex.def Info: ./pic/overview.pdf used on input line 8.
+(pdftex.def)             Requested size: 415.14365pt x 508.6915pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.36 \newpage
-               \listoffigures [1
+l.12 
+      [1] [2 <./pic/overview.pdf>]) (./main.toc)
+\tf@toc=\write3
+\openout3 = `main.toc'.
+
+ [3
 
 ] (./main.lof)
 \tf@lof=\write4
 \openout4 = `main.lof'.
 
- [2
-
-] (./sec/intro.tex
-Chapter 1.
-[3
+ [4
 
 ]
+(./sec/intro.tex
+Chapter 1.
+[5
 
-LaTeX Warning: Reference `pip' on page 4 undefined on input line 29.
-
-[4] [5]) (./sec/layer.tex
+] [6] [7]) (./sec/introduction.tex
 Chapter 2.
-<./pic/5.png, id=85, 403.5075pt x 562.1pt>
+<./pic/bas.jpg, id=147, 351.3125pt x 351.3125pt>
+File: ./pic/bas.jpg Graphic file (type jpg)
+ <use ./pic/bas.jpg>
+Package pdftex.def Info: ./pic/bas.jpg used on input line 9.
+(pdftex.def)             Requested size: 134.86708pt x 134.864pt.
+
+<./pic/bas2.jpg, id=148, 339.2675pt x 501.875pt>
+File: ./pic/bas2.jpg Graphic file (type jpg)
+ <use ./pic/bas2.jpg>
+Package pdftex.def Info: ./pic/bas2.jpg used on input line 11.
+(pdftex.def)             Requested size: 91.1686pt x 134.864pt.
+
+Overfull \hbox (38.99808pt too wide) in paragraph at lines 16--17
+[]\OT1/cmr/m/n/12 Currently, most ex-ist-ing bas-relief pro-duc-tion meth-ods f
+o-cus on com-press-ing 3D scenes/models
+ []
+
+[8
+
+ <./pic/bas.jpg> <./pic/bas2.jpg>] [9]) [10] (./sec/layer.tex
+Chapter 3.
+<./pic/5.png, id=171, 403.5075pt x 562.1pt>
 File: ./pic/5.png Graphic file (type png)
  <use ./pic/5.png>
 Package pdftex.def Info: ./pic/5.png used on input line 12.
 (pdftex.def)             Requested size: 96.81299pt x 134.864pt.
 
-<./pic/pcloud.png, id=86, 953.5625pt x 1053.9375pt>
+<./pic/pcloud.png, id=172, 953.5625pt x 1053.9375pt>
 File: ./pic/pcloud.png Graphic file (type png)
  <use ./pic/pcloud.png>
 Package pdftex.def Info: ./pic/pcloud.png used on input line 14.
 (pdftex.def)             Requested size: 122.01775pt x 134.864pt.
 
-[6
+[11
 
  <./pic/5.png> <./pic/pcloud.png>]
-<./pic/convex.jpg, id=98, 1406.25375pt x 553.06625pt>
+<./pic/convex.jpg, id=183, 1406.25375pt x 553.06625pt>
 File: ./pic/convex.jpg Graphic file (type jpg)
  <use ./pic/convex.jpg>
 Package pdftex.def Info: ./pic/convex.jpg used on input line 28.
 (pdftex.def)             Requested size: 308.60431pt x 121.37451pt.
 
-[7 <./pic/convex.jpg>]
+[12 <./pic/convex.jpg>]
 File: ./pic/5.png Graphic file (type png)
  <use ./pic/5.png>
 Package pdftex.def Info: ./pic/5.png used on input line 64.
 (pdftex.def)             Requested size: 113.81102pt x 158.54482pt.
 
-<./pic/5etf.png, id=111, 403.5075pt x 562.1pt>
+<./pic/5etf.png, id=197, 403.5075pt x 562.1pt>
 File: ./pic/5etf.png Graphic file (type png)
  <use ./pic/5etf.png>
 Package pdftex.def Info: ./pic/5etf.png used on input line 66.
 (pdftex.def)             Requested size: 113.81102pt x 158.54482pt.
 
 
-LaTeX Warning: Reference `decom:4layers' on page 8 undefined on input line 71.
+LaTeX Warning: Reference `decom:4layers' on page 13 undefined on input line 71.
 
-[8 <./pic/5etf.png (PNG copy)>]
-<./pic/ETF_explain.png, id=121, 441.65pt x 414.54875pt>
+
+[13 <./pic/5etf.png (PNG copy)>]
+<./pic/ETF_explain.png, id=207, 441.65pt x 414.54875pt>
 File: ./pic/ETF_explain.png Graphic file (type png)
 
 <use ./pic/ETF_explain.png>
 Package pdftex.def Info: ./pic/ETF_explain.png used on input line 82.
 (pdftex.def)             Requested size: 284.52756pt x 267.08142pt.
 
-<./pic/com_layer1.png, id=122, 82.782pt x 114.975pt>
+<./pic/com_layer1.png, id=208, 82.782pt x 114.975pt>
 File: ./pic/com_layer1.png Graphic file (type png)
 
 <use ./pic/com_layer1.png>
 Package pdftex.def Info: ./pic/com_layer1.png used on input line 92.
 (pdftex.def)             Requested size: 142.26378pt x 197.58823pt.
 
-<./pic/com_layer2.png, id=123, 81.468pt x 113.9895pt>
+<./pic/com_layer2.png, id=209, 81.468pt x 113.9895pt>
 File: ./pic/com_layer2.png Graphic file (type png)
 
 <use ./pic/com_layer2.png>
 Package pdftex.def Info: ./pic/com_layer2.png used on input line 93.
 (pdftex.def)             Requested size: 142.26378pt x 199.08977pt.
- [9 <./pic/ETF_explain.png>]
+ [14 <./pic/ETF_explain.png>]
 File: ./pic/5etf.png Graphic file (type png)
  <use ./pic/5etf.png>
 Package pdftex.def Info: ./pic/5etf.png used on input line 111.
 (pdftex.def)             Requested size: 142.26378pt x 198.17888pt.
 
-<./pic/edge.png, id=132, 720.6925pt x 1003.75pt>
+<./pic/edge.png, id=218, 720.6925pt x 1003.75pt>
 File: ./pic/edge.png Graphic file (type png)
  <use ./pic/edge.png>
 Package pdftex.def Info: ./pic/edge.png used on input line 112.
 (pdftex.def)             Requested size: 142.26378pt x 198.12741pt.
 
-<./pic/com_layer3.png, id=134, 81.468pt x 113.9895pt>
+<./pic/com_layer3.png, id=220, 81.468pt x 113.9895pt>
 File: ./pic/com_layer3.png Graphic file (type png)
 
 <use ./pic/com_layer3.png>
 Package pdftex.def Info: ./pic/com_layer3.png used on input line 120.
 (pdftex.def)             Requested size: 142.26378pt x 199.08977pt.
 
-<./pic/com_layer4.png, id=135, 81.468pt x 113.9895pt>
+<./pic/com_layer4.png, id=221, 81.468pt x 113.9895pt>
 File: ./pic/com_layer4.png Graphic file (type png)
 
 <use ./pic/com_layer4.png>
 Package pdftex.def Info: ./pic/com_layer4.png used on input line 121.
 (pdftex.def)             Requested size: 142.26378pt x 199.08977pt.
- [10 <./pic/com_layer1.png> <./pic/com_layer2.png> <./pic/edge.png>] <./pic/alp
-ha.png, id=146, 403.5075pt x 562.1pt>
+ [15 <./pic/com_layer1.png> <./pic/com_layer2.png> <./pic/edge.png>] <./pic/alp
+ha.png, id=232, 403.5075pt x 562.1pt>
 File: ./pic/alpha.png Graphic file (type png)
 
 <use ./pic/alpha.png>
 Package pdftex.def Info: ./pic/alpha.png used on input line 131.
 (pdftex.def)             Requested size: 136.57462pt x 190.25377pt.
- <./pic/intensity.png, id=147, 403.5075pt x 562.1pt>
+ <./pic/intensity.png, id=233, 403.5075pt x 562.1pt>
 File: ./pic/intensity.png Graphic file (type png)
 
 <use ./pic/intensity.png>
 Package pdftex.def Info: ./pic/intensity.png used on input line 138.
 (pdftex.def)             Requested size: 136.57462pt x 190.25377pt.
- <./pic/h1.png, id=148, 144.2115pt x 92.9655pt>
+ <./pic/h1.png, id=234, 144.2115pt x 92.9655pt>
 File: ./pic/h1.png Graphic file (type png)
 
 <use ./pic/h1.png>
 Package pdftex.def Info: ./pic/h1.png used on input line 147.
 (pdftex.def)             Requested size: 318.66948pt x 205.46234pt.
- <./pic/h2.png, id=150, 143.226pt x 92.3085pt>
+ <./pic/h2.png, id=236, 143.226pt x 92.3085pt>
 File: ./pic/h2.png Graphic file (type png)
 
 <use ./pic/h2.png>
 Package pdftex.def Info: ./pic/h2.png used on input line 152.
 (pdftex.def)             Requested size: 318.66948pt x 205.39066pt.
- [11 <./pic/com_layer3.png> <./pic/com_layer4.png> <./pic/alpha.png (PNG copy)>
- <./pic/intensity.png (PNG copy)>] [12 <./pic/h1.png> <./pic/h2.png>] <./pic/mo
-di_wflow.pdf, id=171, 1271.75125pt x 1636.1125pt>
+ [16 <./pic/com_layer3.png> <./pic/com_layer4.png> <./pic/alpha.png (PNG copy)>
+ <./pic/intensity.png (PNG copy)>] [17 <./pic/h1.png> <./pic/h2.png>] <./pic/mo
+di_wflow.pdf, id=255, 1271.75125pt x 1636.1125pt>
 File: ./pic/modi_wflow.pdf Graphic file (type pdf)
 
 <use ./pic/modi_wflow.pdf>
 Package pdftex.def Info: ./pic/modi_wflow.pdf used on input line 183.
 (pdftex.def)             Requested size: 318.66948pt x 409.9758pt.
 
-<./pic/modi_wopaque.pdf, id=173, 1271.75125pt x 1076.02pt>
+<./pic/modi_wopaque.pdf, id=257, 1271.75125pt x 1076.02pt>
 File: ./pic/modi_wopaque.pdf Graphic file (type pdf)
 
 <use ./pic/modi_wopaque.pdf>
 Package pdftex.def Info: ./pic/modi_wopaque.pdf used on input line 188.
 (pdftex.def)             Requested size: 318.66948pt x 269.62825pt.
 
-<./pic/modi_wedge.pdf, id=175, 1271.75125pt x 1076.02pt>
+<./pic/modi_wedge.pdf, id=259, 1271.75125pt x 1076.02pt>
 File: ./pic/modi_wedge.pdf Graphic file (type pdf)
 
 <use ./pic/modi_wedge.pdf>
@@ -958,7 +984,7 @@ Package pdftex.def Info: ./pic/modi_wedge.pdf used on input line 193.
 
 LaTeX Warning: Float too large for page by 360.20193pt on input line 199.
 
-<./pic/rmse.pdf, id=181, 710.655pt x 499.8675pt>
+<./pic/rmse.pdf, id=265, 710.655pt x 499.8675pt>
 File: ./pic/rmse.pdf Graphic file (type pdf)
  <use ./pic/rmse.pdf>
 Package pdftex.def Info: ./pic/rmse.pdf used on input line 217.
@@ -968,10 +994,10 @@ Overfull \hbox (28.45273pt too wide) in paragraph at lines 217--218
  [][] 
  []
 
-) [13] (./main.bbl [14 <./pic/modi_wflow.pdf> <./pic/modi_wopaque.pdf> <./pic/m
-odi_wedge.pdf>] [15 <./pic/rmse.pdf>])
+) [18] (./main.bbl [19 <./pic/modi_wflow.pdf> <./pic/modi_wopaque.pdf> <./pic/m
+odi_wedge.pdf>] [20 <./pic/rmse.pdf>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 54.
- [16
+ [21
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 54.
@@ -985,13 +1011,13 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 54.
  ) 
 Here is how much of TeX's memory you used:
- 9094 strings out of 494953
- 134700 string characters out of 6180977
- 219710 words of memory out of 5000000
- 12151 multiletter control sequences out of 15000+600000
+ 9130 strings out of 494953
+ 135223 string characters out of 6180977
+ 220847 words of memory out of 5000000
+ 12167 multiletter control sequences out of 15000+600000
  13855 words of font info for 51 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,7n,77p,930b,542s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,7n,77p,1078b,542s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
@@ -1004,10 +1030,10 @@ c/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.
 pfb>
-Output written on main.pdf (17 pages, 5745460 bytes).
+Output written on main.pdf (22 pages, 6843185 bytes).
 PDF statistics:
- 391 PDF objects out of 1000 (max. 8388607)
- 280 compressed objects within 3 object streams
- 51 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 485 PDF objects out of 1000 (max. 8388607)
+ 348 compressed objects within 4 object streams
+ 62 named destinations out of 1000 (max. 500000)
+ 192 words of extra memory for PDF output out of 10000 (max. 10000000)
 

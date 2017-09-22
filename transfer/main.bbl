@@ -41,6 +41,11 @@ Songhua Xu, Yingqing Xu, Sing~Bing Kang, David~H Salesin, Yunhe Pan, and
 \newblock Animating chinese paintings through stroke-based decomposition.
 \newblock {\em ACM Transactions on Graphics (TOG)}, 25(2):239--267, 2006.
 
+\bibitem{barron2012color}
+Jonathan Barron and Jitendra Malik.
+\newblock Color constancy, intrinsic images, and shape estimation.
+\newblock {\em Computer Vision--ECCV 2012}, pages 57--70, 2012.
+
 \bibitem{kang2007coherent}
 Henry Kang, Seungyong Lee, and Charles~K Chui.
 \newblock Coherent line drawing.
