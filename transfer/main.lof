@@ -2,13 +2,3 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Bas-relief\relax }}{8}{figure.caption.5}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Geometry of input image pixels in RGB-space\relax }}{11}{figure.caption.6}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Convex hull of input image\relax }}{12}{figure.caption.7}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Edge Tangent Flow\relax }}{13}{figure.caption.8}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Coherent line details \relax }}{14}{figure.caption.9}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Comparison of layer decomposition \relax }}{15}{figure.caption.10}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Edge Tangent Flow field and coherent lines of a Rosemaling painting. It contains lots of C and S strokes.\relax }}{15}{figure.caption.11}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Comparison of layer decomposition before and after using $E_{egde}$ in Eq \ref {eq:layer1}; \relax }}{16}{figure.caption.12}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Comparison between transparency and intensity of layer1\relax }}{17}{figure.caption.14}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Comparison between transparency and intensity of layer1\relax }}{19}{figure.caption.15}
