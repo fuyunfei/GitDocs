@@ -41,10 +41,66 @@ Songhua Xu, Yingqing Xu, Sing~Bing Kang, David~H Salesin, Yunhe Pan, and
 \newblock Animating chinese paintings through stroke-based decomposition.
 \newblock {\em ACM Transactions on Graphics (TOG)}, 25(2):239--267, 2006.
 
-\bibitem{barron2012color}
-Jonathan Barron and Jitendra Malik.
-\newblock Color constancy, intrinsic images, and shape estimation.
-\newblock {\em Computer Vision--ECCV 2012}, pages 57--70, 2012.
+\bibitem{richardt2014vectorising}
+Christian Richardt, Jorge Lopez-Moreno, Adrien Bousseau, Maneesh Agrawala, and
+  George Drettakis.
+\newblock Vectorising bitmaps into semi-transparent gradient layers.
+\newblock In {\em Computer Graphics Forum}, volume~33, pages 11--19. Wiley
+  Online Library, 2014.
+
+\bibitem{mccann2009local}
+James McCann and Nancy Pollard.
+\newblock Local layering.
+\newblock {\em ACM Transactions on Graphics (TOG)}, 28(3):84, 2009.
+
+\bibitem{mccann2012soft}
+James McCann and Nancy~S Pollard.
+\newblock Soft stacking.
+\newblock In {\em Computer Graphics Forum}, volume~31, pages 469--478. Wiley
+  Online Library, 2012.
+
+\bibitem{tan2016decomposing}
+Jianchao Tan, Jyh-Ming Lien, and Yotam Gingold.
+\newblock Decomposing images into layers via rgb-space geometry.
+\newblock {\em ACM Transactions on Graphics (TOG)}, 36(1):7, 2016.
+
+\bibitem{li2012rhythmic}
+Jia Li, Lei Yao, Ella Hendriks, and James~Z Wang.
+\newblock Rhythmic brushstrokes distinguish van gogh from his contemporaries:
+  findings via automated brushstroke extraction.
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
+  34(6):1159--1176, 2012.
+
+\bibitem{matas2004robust}
+Jiri Matas, Ondrej Chum, Martin Urban, and Tom{\'a}s Pajdla.
+\newblock Robust wide-baseline stereo from maximally stable extremal regions.
+\newblock {\em Image and vision computing}, 22(10):761--767, 2004.
+
+\bibitem{neumann2011text}
+Lukas Neumann and Jiri Matas.
+\newblock Text localization in real-world images using efficiently pruned
+  exhaustive search.
+\newblock In {\em Document Analysis and Recognition (ICDAR), 2011 International
+  Conference on}, pages 687--691. IEEE, 2011.
+
+\bibitem{gomez2013multi}
+Lluis Gomez and Dimosthenis Karatzas.
+\newblock Multi-script text extraction from natural scenes.
+\newblock In {\em Document Analysis and Recognition (ICDAR), 2013 12th
+  International Conference on}, pages 467--471. IEEE, 2013.
+
+\bibitem{gomez2016fast}
+Lluis Gomez and Dimosthenis Karatzas.
+\newblock A fast hierarchical method for multi-script and arbitrary oriented
+  scene text extraction.
+\newblock {\em International Journal on Document Analysis and Recognition
+  (IJDAR)}, 19(4):335--349, 2016.
+
+\bibitem{donoser2006efficient}
+Michael Donoser and Horst Bischof.
+\newblock Efficient maximally stable extremal region (mser) tracking.
+\newblock In {\em Computer Vision and Pattern Recognition, 2006 IEEE Computer
+  Society Conference on}, volume~1, pages 553--560. IEEE, 2006.
 
 \bibitem{kang2007coherent}
 Henry Kang, Seungyong Lee, and Charles~K Chui.
@@ -52,15 +108,81 @@ Henry Kang, Seungyong Lee, and Charles~K Chui.
 \newblock In {\em Proceedings of the 5th international symposium on
   Non-photorealistic animation and rendering}, pages 43--50. ACM, 2007.
 
-\bibitem{tan2016decomposing}
-Jianchao Tan, Jyh-Ming Lien, and Yotam Gingold.
-\newblock Decomposing images into layers via rgb-space geometry.
-\newblock {\em ACM Transactions on Graphics (TOG)}, 36(1):7, 2016.
+\bibitem{wang2010image}
+Meili Wang, Jian Chang, Junjun Pan, and J~Zhang.
+\newblock Image-based bas-relief generation with gradient operation.
+\newblock In {\em Proceedings of the 11th IASTED International Conference
+  Computer Graphics and Imaging, Innsbruck}, volume 679, page~33, 2010.
 
-\bibitem{porter1984compositing}
-Thomas Porter and Tom Duff.
-\newblock Compositing digital images.
-\newblock In {\em ACM Siggraph Computer Graphics}, volume~18, pages 253--259.
-  ACM, 1984.
+\bibitem{li2012restoration}
+Zhuwen Li, Song Wang, Jinhui Yu, and Kwan-Liu Ma.
+\newblock Restoration of brick and stone relief from single rubbing images.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  18(2):177--187, 2012.
+
+\bibitem{zhang1999shape}
+Ruo Zhang, Ping-Sing Tsai, James~Edwin Cryer, and Mubarak Shah.
+\newblock Shape-from-shading: a survey.
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
+  21(8):690--706, 1999.
+
+\bibitem{prados2003perspective}
+Emmanuel Prados and Olivier~D Faugeras.
+\newblock " perspective shape from shading" and viscosity solutions.
+\newblock In {\em ICCV}, volume~3, page 826, 2003.
+
+\bibitem{lions1993shape}
+Pierre-Louis Lions, Elisabeth Rouy, and A~Tourin.
+\newblock Shape-from-shading, viscosity solutions and edges.
+\newblock {\em Numerische Mathematik}, 64(1):323--353, 1993.
+
+\bibitem{prados2004unifying}
+Emmanuel Prados and Olivier Faugeras.
+\newblock Unifying approaches and removing unrealistic assumptions in shape
+  from shading: Mathematics can help.
+\newblock {\em Computer Vision-ECCV 2004}, pages 141--154, 2004.
+
+\bibitem{alldrin2007resolving}
+Neil~G Alldrin, Satya~P Mallick, and David~J Kriegman.
+\newblock Resolving the generalized bas-relief ambiguity by entropy
+  minimization.
+\newblock In {\em Computer Vision and Pattern Recognition, 2007. CVPR'07. IEEE
+  Conference on}, pages 1--7. IEEE, 2007.
+
+\bibitem{johnson2011shape}
+Micah~K Johnson and Edward~H Adelson.
+\newblock Shape estimation in natural illumination.
+\newblock In {\em Computer Vision and Pattern Recognition (CVPR), 2011 IEEE
+  Conference on}, pages 2553--2560. IEEE, 2011.
+
+\bibitem{barron2012color}
+Jonathan Barron and Jitendra Malik.
+\newblock Color constancy, intrinsic images, and shape estimation.
+\newblock {\em Computer Vision--ECCV 2012}, pages 57--70, 2012.
+
+\bibitem{kolomenkin2011reconstruction}
+Michael Kolomenkin, George Leifman, Ilan Shimshoni, and Ayellet Tal.
+\newblock Reconstruction of relief objects from line drawings.
+\newblock In {\em Computer Vision and Pattern Recognition (CVPR), 2011 IEEE
+  Conference on}, pages 993--1000. IEEE, 2011.
+
+\bibitem{varley2002estimating}
+Peter~AC Varley and Ralph~R Martin.
+\newblock Estimating depth from line drawing.
+\newblock In {\em Proceedings of the seventh ACM symposium on Solid modeling
+  and applications}, pages 180--191. ACM, 2002.
+
+\bibitem{malik1987interpreting}
+Jitendra Malik.
+\newblock Interpreting line drawings of curved objects.
+\newblock {\em International Journal of Computer Vision}, 1(1):73--103, 1987.
+
+\bibitem{sykora2014ink}
+Daniel S{\`y}kora, Ladislav Kavan, Martin {\v{C}}ad{\'\i}k, Ond{\v{r}}ej
+  Jamri{\v{s}}ka, Alec Jacobson, Brian Whited, Maryann Simmons, and Olga
+  Sorkine-Hornung.
+\newblock Ink-and-ray: Bas-relief meshes for adding global illumination effects
+  to hand-drawn characters.
+\newblock {\em ACM Transactions on Graphics (TOG)}, 33(2):16, 2014.
 
 \end{thebibliography}

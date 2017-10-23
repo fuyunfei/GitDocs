@@ -4,46 +4,47 @@ The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: ref.bib
 Warning--can't use both volume and number fields in weyrich2007digital
-Warning--can't use both volume and number fields in porter1984compositing
-You've used 11 entries,
+Warning--can't use both volume and number fields in richardt2014vectorising
+Warning--can't use both volume and number fields in mccann2012soft
+You've used 31 entries,
             1791 wiz_defined-function locations,
-            521 strings with 5399 characters,
-and the built_in function-call counts, 3305 in all, are:
-= -- 304
-> -- 157
-< -- 7
-+ -- 56
-- -- 45
-* -- 246
-:= -- 502
-add.period$ -- 37
-call.type$ -- 11
-change.case$ -- 11
+            633 strings with 9078 characters,
+and the built_in function-call counts, 9426 in all, are:
+= -- 902
+> -- 382
+< -- 22
++ -- 138
+- -- 107
+* -- 650
+:= -- 1365
+add.period$ -- 105
+call.type$ -- 31
+change.case$ -- 31
 chr.to.int$ -- 0
-cite$ -- 13
-duplicate$ -- 148
-empty$ -- 299
-format.name$ -- 45
-if$ -- 751
+cite$ -- 34
+duplicate$ -- 447
+empty$ -- 891
+format.name$ -- 107
+if$ -- 2198
 int.to.chr$ -- 0
-int.to.str$ -- 11
-missing$ -- 11
-newline$ -- 58
-num.names$ -- 11
-pop$ -- 30
+int.to.str$ -- 31
+missing$ -- 31
+newline$ -- 158
+num.names$ -- 31
+pop$ -- 99
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 80
+skip$ -- 262
 stack$ -- 0
-substring$ -- 229
-swap$ -- 56
-text.length$ -- 7
+substring$ -- 704
+swap$ -- 180
+text.length$ -- 22
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 35
-width$ -- 13
-write$ -- 129
-(There were 2 warnings)
+warning$ -- 3
+while$ -- 100
+width$ -- 33
+write$ -- 361
+(There were 3 warnings)

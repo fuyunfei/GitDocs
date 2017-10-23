@@ -1,3 +1,9 @@
 \contentsline {chapter}{\numberline {1}INTRODUCTION}{5}{chapter.1}
-\contentsline {chapter}{\numberline {2}INTRODUCTION}{8}{chapter.2}
-\contentsline {section}{\numberline {2.1}Thesis Structure}{10}{section.2.1}
+\contentsline {section}{\numberline {1.1}Background}{5}{section.1.1}
+\contentsline {section}{\numberline {1.2}Contribution of Current Work}{7}{section.1.2}
+\contentsline {chapter}{\numberline {2}LITERATURE REVIEW}{8}{chapter.2}
+\contentsline {section}{\numberline {2.1}Stroke Segmentation}{8}{section.2.1}
+\contentsline {section}{\numberline {2.2}Bas-Relief generation from 2D images}{9}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Gradient and intensity based methods}{9}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Shape from shading(SFS) based methods}{10}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Line drawing based methods}{10}{subsection.2.2.3}
