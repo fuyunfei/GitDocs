@@ -7,6 +7,13 @@ Tim Weyrich, Jia Deng, Connelly Barnes, Szymon Rusinkiewicz, and Adam
 \newblock In {\em ACM Transactions on Graphics (TOG)}, volume~26, page~32. ACM,
   2007.
 
+\bibitem{kerber2012computer}
+Jens Kerber, Meili Wang, Jian Chang, Jian~J Zhang, Alexander Belyaev, and H-P
+  Seidel.
+\newblock Computer assisted relief generation—a survey.
+\newblock In {\em Computer Graphics Forum}, volume~31, pages 2363--2377. Wiley
+  Online Library, 2012.
+
 \bibitem{kerber2009feature}
 Jens Kerber, Art Tevs, Alexander Belyaev, Rhaleb Zayer, and Hans-Peter Seidel.
 \newblock Feature sensitive bas relief generation.
@@ -40,6 +47,11 @@ Songhua Xu, Yingqing Xu, Sing~Bing Kang, David~H Salesin, Yunhe Pan, and
   Heung-Yeung Shum.
 \newblock Animating chinese paintings through stroke-based decomposition.
 \newblock {\em ACM Transactions on Graphics (TOG)}, 25(2):239--267, 2006.
+
+\bibitem{barron2012color}
+Jonathan Barron and Jitendra Malik.
+\newblock Color constancy, intrinsic images, and shape estimation.
+\newblock {\em Computer Vision--ECCV 2012}, pages 57--70, 2012.
 
 \bibitem{richardt2014vectorising}
 Christian Richardt, Jorge Lopez-Moreno, Adrien Bousseau, Maneesh Agrawala, and
@@ -154,11 +166,6 @@ Micah~K Johnson and Edward~H Adelson.
 \newblock Shape estimation in natural illumination.
 \newblock In {\em Computer Vision and Pattern Recognition (CVPR), 2011 IEEE
   Conference on}, pages 2553--2560. IEEE, 2011.
-
-\bibitem{barron2012color}
-Jonathan Barron and Jitendra Malik.
-\newblock Color constancy, intrinsic images, and shape estimation.
-\newblock {\em Computer Vision--ECCV 2012}, pages 57--70, 2012.
 
 \bibitem{kolomenkin2011reconstruction}
 Michael Kolomenkin, George Leifman, Ilan Shimshoni, and Ayellet Tal.

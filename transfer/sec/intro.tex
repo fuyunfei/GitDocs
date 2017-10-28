@@ -2,16 +2,20 @@
 
 \section{Background}
 
-Relief is a kind of sculpture in which 3D models are carved into a relatively flat surface. As an artistic form, relief spans the continuum between a 2D painting and a full 3D sculpture \cite{weyrich2007digital}. Namely, it creates a bridge between a full 3D sculpture and a 2D painting\cite{kerber2009feature}.On this spectrum, high relief is closest to full 3D, whereas flatter artworks are described as bas-relief.And  among all the sculpture forms, bas-relief is arguably the closest to 2D paintings \cite{kerber2009feature}.
+Relief is a kind of sculpture in which 3D models are carved into a relatively flat surface. In essence, it creates a bridge between a full 3D sculpture and a 2D painting. As an artistic form, relief spans the continuum between a 2D  painting and a full 3D sculpture\cite{weyrich2007digital}. On this spectrum, alto-relievo (high relief) is closest to full 3D, whereas flatter artworks are described as basso-relievo (low relief, and also called bas-relief). Among all the sculpture forms, bas-relief is arguably the closest to 2D paintings, as claimed by\cite{kerber2009feature} and\cite{barron2012color}.\\ \\
+Bas-relief sculpting has been practiced for thousands of years.Since antiquity, artisans from many ancient cultures(including Greek, Persian, Egyptian, Mayan, and Indian art) have created bas-reliefs.\\ \\
+Today bas-reliefs are commonly found in a variety of media, commemorative medals, coins, souvenirs, 2.5D animation,and artistic sculptures for blind people. However, crafting bas-reliefs is a laborious, challenging and time consuming process. There are many ways to reach the same goals more easily with the help of computers.As mentioned above, relief spans the continuum between a 2D painting and a full 3D sculpture \cite{weyrich2007digital}.In general, the bas-relief generation methods can be classified in two different categories:
+\begin{itemize}
+ \item 3D model based : using a 3D model (sculpture) as input 
+ \item 2D image based : using a 2D image as input
+\end{itemize} 
+
+\textbf{3D model based:} Most existing bas-relief production methods have demonstrate how to compress 3D sculpture(model) into bas-relief \cite{weyrich2007digital}and\cite{kerber2009feature}. This approach requires a 3D model as a starting point. 
 
 
-As mentioned above, relief spans the continuum between a 2D painting and a full 3D sculpture \cite{weyrich2007digital}.
-
-How to generate bas-relief from 3D sculpture?  Existing bas-relief production methods have demonstrate how to compress 3D sculpture(model) into bas-relief \cite{weyrich2007digital}and\cite{kerber2009feature}. This approach requires a 3D model as a starting point. 
-
-On the other hand, how to generate bas-relief from 2D painting?
+\textbf{2D image based:}
 There have been some bas-relief production approaches available based on 2D image in\cite{zeng2014region}\cite{wu2013making} and \cite{alexa2010reliefs}. These approaches almost follow the “bas-relief ambiguity”\cite{belhumeur1999bas}, that is, roughly speaking, from a frontal view the sculpture looks like a full 3D object while a side-view reveals the disproportional depth. 
-However, these image based method are focusing on general photograph, which unsuited for specific problems for brush paintings, such as stroke overlapping and its transparency.  
+However, these image based method are focusing on general photograph, which unsuited for specific problems for paintings, such as stroke overlapping and its transparency.  
 
 Little is done in the area of bas-relief generation from artistic paintings, as maintaining the information of the brush paintings proves much trickier than simply manipulating the height of the contour lines. In the case of bas-reliefs, although there is no 3D model available, pseudo 3D effect reflecting the style and subtlety is crucial in preserving the artistic essence.
 
@@ -24,6 +28,13 @@ The shape, color and opacity of a stroke vary due to the shape and firmness of t
 To extract the strokes from a brush painting, we need to identify and segment the overlapped strokes. We will then generate the depth map for every stroke separately using the shape from shading (SFS) technique on the opacity. All the strokes are finally merged together to yield the resulting bas-relief with the original 2D painting preserved. 
 
 \section{Motivation}
+
+Relief belong to a category of art that bridges the gap between 2D painting and 3D sculpting\cite{kerber2012computer}.
+
+Bas-relief generation has wide applications in making objects such as commemorative medals, coins, souvenirs, and artistic sculptures for blind people, while current methods are not suitable for bas-relief generation based on Chinese brush paintings. 
+
+
+Previous researches 
 Bas-relief is an art form part way between sculpture and drawing. \cite{zeng2014region} 
 
 
