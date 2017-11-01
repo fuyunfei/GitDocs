@@ -7,18 +7,23 @@ Tim Weyrich, Jia Deng, Connelly Barnes, Szymon Rusinkiewicz, and Adam
 \newblock In {\em ACM Transactions on Graphics (TOG)}, volume~26, page~32. ACM,
   2007.
 
+\bibitem{kerber2009feature}
+Jens Kerber, Art Tevs, Alexander Belyaev, Rhaleb Zayer, and Hans-Peter Seidel.
+\newblock Feature sensitive bas relief generation.
+\newblock In {\em Shape Modeling and Applications, 2009. SMI 2009. IEEE
+  International Conference on}, pages 148--154. IEEE, 2009.
+
+\bibitem{barron2012color}
+Jonathan Barron and Jitendra Malik.
+\newblock Color constancy, intrinsic images, and shape estimation.
+\newblock {\em Computer Vision--ECCV 2012}, pages 57--70, 2012.
+
 \bibitem{kerber2012computer}
 Jens Kerber, Meili Wang, Jian Chang, Jian~J Zhang, Alexander Belyaev, and H-P
   Seidel.
 \newblock Computer assisted relief generation—a survey.
 \newblock In {\em Computer Graphics Forum}, volume~31, pages 2363--2377. Wiley
   Online Library, 2012.
-
-\bibitem{kerber2009feature}
-Jens Kerber, Art Tevs, Alexander Belyaev, Rhaleb Zayer, and Hans-Peter Seidel.
-\newblock Feature sensitive bas relief generation.
-\newblock In {\em Shape Modeling and Applications, 2009. SMI 2009. IEEE
-  International Conference on}, pages 148--154. IEEE, 2009.
 
 \bibitem{zeng2014region}
 Qiong Zeng, Ralph~R Martin, Lu~Wang, Jonathan~A Quinn, Yuhong Sun, and Changhe
@@ -48,10 +53,94 @@ Songhua Xu, Yingqing Xu, Sing~Bing Kang, David~H Salesin, Yunhe Pan, and
 \newblock Animating chinese paintings through stroke-based decomposition.
 \newblock {\em ACM Transactions on Graphics (TOG)}, 25(2):239--267, 2006.
 
-\bibitem{barron2012color}
-Jonathan Barron and Jitendra Malik.
-\newblock Color constancy, intrinsic images, and shape estimation.
-\newblock {\em Computer Vision--ECCV 2012}, pages 57--70, 2012.
+\bibitem{cignoni1997computer}
+Paolo Cignoni, Claudio Montani, and Roberto Scopigno.
+\newblock Computer-assisted generation of bas-and high-reliefs.
+\newblock {\em Journal of graphics tools}, 2(3):15--28, 1997.
+
+\bibitem{song2007automatic}
+Wenhao Song, Alexander Belyaev, and Hans-Peter Seidel.
+\newblock Automatic generation of bas-reliefs from 3d shapes.
+\newblock In {\em Shape Modeling and Applications, 2007. SMI'07. IEEE
+  International Conference on}, pages 211--214. IEEE, 2007.
+
+\bibitem{sun2009bas}
+Xianfang Sun, Paul~L Rosin, Ralph~R Martin, and Frank~C Langbein.
+\newblock Bas-relief generation using adaptive histogram equalization.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  15(4):642--653, 2009.
+
+\bibitem{zhang1999shape}
+Ruo Zhang, Ping-Sing Tsai, James~Edwin Cryer, and Mubarak Shah.
+\newblock Shape-from-shading: a survey.
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
+  21(8):690--706, 1999.
+
+\bibitem{prados2003perspective}
+Emmanuel Prados and Olivier~D Faugeras.
+\newblock " perspective shape from shading" and viscosity solutions.
+\newblock In {\em ICCV}, volume~3, page 826, 2003.
+
+\bibitem{lions1993shape}
+Pierre-Louis Lions, Elisabeth Rouy, and A~Tourin.
+\newblock Shape-from-shading, viscosity solutions and edges.
+\newblock {\em Numerische Mathematik}, 64(1):323--353, 1993.
+
+\bibitem{prados2004unifying}
+Emmanuel Prados and Olivier Faugeras.
+\newblock Unifying approaches and removing unrealistic assumptions in shape
+  from shading: Mathematics can help.
+\newblock {\em Computer Vision-ECCV 2004}, pages 141--154, 2004.
+
+\bibitem{alldrin2007resolving}
+Neil~G Alldrin, Satya~P Mallick, and David~J Kriegman.
+\newblock Resolving the generalized bas-relief ambiguity by entropy
+  minimization.
+\newblock In {\em Computer Vision and Pattern Recognition, 2007. CVPR'07. IEEE
+  Conference on}, pages 1--7. IEEE, 2007.
+
+\bibitem{johnson2011shape}
+Micah~K Johnson and Edward~H Adelson.
+\newblock Shape estimation in natural illumination.
+\newblock In {\em Computer Vision and Pattern Recognition (CVPR), 2011 IEEE
+  Conference on}, pages 2553--2560. IEEE, 2011.
+
+\bibitem{kolomenkin2011reconstruction}
+Michael Kolomenkin, George Leifman, Ilan Shimshoni, and Ayellet Tal.
+\newblock Reconstruction of relief objects from line drawings.
+\newblock In {\em Computer Vision and Pattern Recognition (CVPR), 2011 IEEE
+  Conference on}, pages 993--1000. IEEE, 2011.
+
+\bibitem{varley2002estimating}
+Peter~AC Varley and Ralph~R Martin.
+\newblock Estimating depth from line drawing.
+\newblock In {\em Proceedings of the seventh ACM symposium on Solid modeling
+  and applications}, pages 180--191. ACM, 2002.
+
+\bibitem{malik1987interpreting}
+Jitendra Malik.
+\newblock Interpreting line drawings of curved objects.
+\newblock {\em International Journal of Computer Vision}, 1(1):73--103, 1987.
+
+\bibitem{sykora2014ink}
+Daniel S{\`y}kora, Ladislav Kavan, Martin {\v{C}}ad{\'\i}k, Ond{\v{r}}ej
+  Jamri{\v{s}}ka, Alec Jacobson, Brian Whited, Maryann Simmons, and Olga
+  Sorkine-Hornung.
+\newblock Ink-and-ray: Bas-relief meshes for adding global illumination effects
+  to hand-drawn characters.
+\newblock {\em ACM Transactions on Graphics (TOG)}, 33(2):16, 2014.
+
+\bibitem{wang2010image}
+Meili Wang, Jian Chang, Junjun Pan, and J~Zhang.
+\newblock Image-based bas-relief generation with gradient operation.
+\newblock In {\em Proceedings of the 11th IASTED International Conference
+  Computer Graphics and Imaging, Innsbruck}, volume 679, page~33, 2010.
+
+\bibitem{li2012restoration}
+Zhuwen Li, Song Wang, Jinhui Yu, and Kwan-Liu Ma.
+\newblock Restoration of brick and stone relief from single rubbing images.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  18(2):177--187, 2012.
 
 \bibitem{richardt2014vectorising}
 Christian Richardt, Jorge Lopez-Moreno, Adrien Bousseau, Maneesh Agrawala, and
@@ -119,77 +208,5 @@ Henry Kang, Seungyong Lee, and Charles~K Chui.
 \newblock Coherent line drawing.
 \newblock In {\em Proceedings of the 5th international symposium on
   Non-photorealistic animation and rendering}, pages 43--50. ACM, 2007.
-
-\bibitem{wang2010image}
-Meili Wang, Jian Chang, Junjun Pan, and J~Zhang.
-\newblock Image-based bas-relief generation with gradient operation.
-\newblock In {\em Proceedings of the 11th IASTED International Conference
-  Computer Graphics and Imaging, Innsbruck}, volume 679, page~33, 2010.
-
-\bibitem{li2012restoration}
-Zhuwen Li, Song Wang, Jinhui Yu, and Kwan-Liu Ma.
-\newblock Restoration of brick and stone relief from single rubbing images.
-\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
-  18(2):177--187, 2012.
-
-\bibitem{zhang1999shape}
-Ruo Zhang, Ping-Sing Tsai, James~Edwin Cryer, and Mubarak Shah.
-\newblock Shape-from-shading: a survey.
-\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
-  21(8):690--706, 1999.
-
-\bibitem{prados2003perspective}
-Emmanuel Prados and Olivier~D Faugeras.
-\newblock " perspective shape from shading" and viscosity solutions.
-\newblock In {\em ICCV}, volume~3, page 826, 2003.
-
-\bibitem{lions1993shape}
-Pierre-Louis Lions, Elisabeth Rouy, and A~Tourin.
-\newblock Shape-from-shading, viscosity solutions and edges.
-\newblock {\em Numerische Mathematik}, 64(1):323--353, 1993.
-
-\bibitem{prados2004unifying}
-Emmanuel Prados and Olivier Faugeras.
-\newblock Unifying approaches and removing unrealistic assumptions in shape
-  from shading: Mathematics can help.
-\newblock {\em Computer Vision-ECCV 2004}, pages 141--154, 2004.
-
-\bibitem{alldrin2007resolving}
-Neil~G Alldrin, Satya~P Mallick, and David~J Kriegman.
-\newblock Resolving the generalized bas-relief ambiguity by entropy
-  minimization.
-\newblock In {\em Computer Vision and Pattern Recognition, 2007. CVPR'07. IEEE
-  Conference on}, pages 1--7. IEEE, 2007.
-
-\bibitem{johnson2011shape}
-Micah~K Johnson and Edward~H Adelson.
-\newblock Shape estimation in natural illumination.
-\newblock In {\em Computer Vision and Pattern Recognition (CVPR), 2011 IEEE
-  Conference on}, pages 2553--2560. IEEE, 2011.
-
-\bibitem{kolomenkin2011reconstruction}
-Michael Kolomenkin, George Leifman, Ilan Shimshoni, and Ayellet Tal.
-\newblock Reconstruction of relief objects from line drawings.
-\newblock In {\em Computer Vision and Pattern Recognition (CVPR), 2011 IEEE
-  Conference on}, pages 993--1000. IEEE, 2011.
-
-\bibitem{varley2002estimating}
-Peter~AC Varley and Ralph~R Martin.
-\newblock Estimating depth from line drawing.
-\newblock In {\em Proceedings of the seventh ACM symposium on Solid modeling
-  and applications}, pages 180--191. ACM, 2002.
-
-\bibitem{malik1987interpreting}
-Jitendra Malik.
-\newblock Interpreting line drawings of curved objects.
-\newblock {\em International Journal of Computer Vision}, 1(1):73--103, 1987.
-
-\bibitem{sykora2014ink}
-Daniel S{\`y}kora, Ladislav Kavan, Martin {\v{C}}ad{\'\i}k, Ond{\v{r}}ej
-  Jamri{\v{s}}ka, Alec Jacobson, Brian Whited, Maryann Simmons, and Olga
-  Sorkine-Hornung.
-\newblock Ink-and-ray: Bas-relief meshes for adding global illumination effects
-  to hand-drawn characters.
-\newblock {\em ACM Transactions on Graphics (TOG)}, 33(2):16, 2014.
 
 \end{thebibliography}

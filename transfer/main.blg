@@ -7,45 +7,45 @@ Warning--can't use both volume and number fields in weyrich2007digital
 Warning--can't use both volume and number fields in kerber2012computer
 Warning--can't use both volume and number fields in richardt2014vectorising
 Warning--can't use both volume and number fields in mccann2012soft
-You've used 32 entries,
+You've used 35 entries,
             1791 wiz_defined-function locations,
-            637 strings with 9253 characters,
-and the built_in function-call counts, 9904 in all, are:
-= -- 949
-> -- 402
-< -- 24
-+ -- 145
-- -- 113
-* -- 685
-:= -- 1427
-add.period$ -- 109
-call.type$ -- 32
-change.case$ -- 32
+            655 strings with 9853 characters,
+and the built_in function-call counts, 10790 in all, are:
+= -- 1036
+> -- 438
+< -- 25
++ -- 158
+- -- 123
+* -- 750
+:= -- 1557
+add.period$ -- 119
+call.type$ -- 35
+change.case$ -- 35
 chr.to.int$ -- 0
-cite$ -- 36
-duplicate$ -- 470
-empty$ -- 932
-format.name$ -- 113
-if$ -- 2313
+cite$ -- 39
+duplicate$ -- 509
+empty$ -- 1016
+format.name$ -- 123
+if$ -- 2516
 int.to.chr$ -- 0
-int.to.str$ -- 32
-missing$ -- 32
-newline$ -- 163
-num.names$ -- 32
-pop$ -- 103
+int.to.str$ -- 35
+missing$ -- 35
+newline$ -- 178
+num.names$ -- 35
+pop$ -- 111
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 280
+skip$ -- 300
 stack$ -- 0
-substring$ -- 744
-swap$ -- 195
-text.length$ -- 24
+substring$ -- 820
+swap$ -- 208
+text.length$ -- 25
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 4
-while$ -- 104
-width$ -- 34
-write$ -- 374
+while$ -- 114
+width$ -- 37
+write$ -- 408
 (There were 4 warnings)
