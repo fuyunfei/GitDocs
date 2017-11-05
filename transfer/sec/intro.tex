@@ -19,18 +19,18 @@ The aim of our research is to provide a method to generate a bas-relief from a C
 In our bas-relief generation process, although there is no 3D model available from input Chinese painting, preserve the style and features of the painting is crucial in preserving the artistic essence.\\ 
 Most Chinese paintings are typically sparse with each brush stroke drawn very purposefully\cite{smith1997art},and in Chinese painting each stroke exists on its own as a piece of art\cite{girshick2004simulating}.
 A Chinese painting can be regarded as the union of brush strokes \cite{xu2006animating}. Differing from the other bas-relief generation methods, our method will honor this very feature by constructing bas-relief surface from the brush strokes individually. This however demands to conquer several challenges. \\
-First, each brush stroke covers a region on the canvas and they may overlap each other, some quite heavily in a painting. To make sure the information is retained, every stroke has to be faithfully extracted.\\ Second,unlike previous 2D image based methods focusing on photograph, a painting does not obey the rules of lighting and shading, which increase the difficulty to mimic the details on bas-relief surface. \\Third, the generated bas-relief should be further editable allowing the artist to rearrange, tweaking and reshaping the bas-relief surface correspond to each brush strokes. \\  \\
+First, each brush stroke covers a region on the canvas and they may overlap each other, some quite heavily in a painting. To make sure the information is retained, every brush stroke has to be faithfully extracted.\\ Second,unlike previous 2D image based methods focusing on photograph, a painting does not obey the rules of lighting and shading, which increase the difficulty to mimic the details on bas-relief surface. \\Third, the generated bas-relief should be further editable allowing the artist to rearrange, tweaking and reshaping the bas-relief surface correspond to each brush strokes. \\  \\
 
 The shape, color and opacity of a stroke vary due to the shape and firmness of the brush as well as the forces the artist imposes. Although these variables add the complexity to stroke extraction, stylized strokes often follow distinct patterns. For example, Rosemaling paintings, a typical example of brush painting popular in North Europe, is a traditional form of decorative folk art that originated in the rural valleys of Norway. The Rosemailing designs use C and S strokes, feature scroll, flowing lines, floral designs, and both subtle and vibrant colors. The brush strokes may further be viewed as graphical objects which are meaningful with respect to the objects the painting portraits. Moreover, each stroke is clearly visible due to both subtle and vibrant colors. The similar properties may be found in some Chinese brush paints.
 
 To extract the strokes from a brush painting, we need to identify and segment the overlapped strokes. We will then generate the depth map for every stroke separately using the shape from shading (SFS) technique on the opacity. All the strokes are finally merged together to yield the resulting bas-relief with the original 2D painting preserved. 
 
 \section{Motivation}
+The motivation of this research comes from two sides.First,as mentioned above, bas-relief is a art form part way between 2D painting and a full 3D sculpture\cite{benzaid2017analysis}\cite{weyrich2007digital}\cite{kerber2009feature}\cite{kerber2012computer}\cite{zeng2014region}. Research so far has been primarily done on using 3D model,and some other methods based on a single photograph or line drawing as input. However,how to generate bas-relief from artistic paintings remains a problem .\\
+Second, due to the various styles of painting, it is difficult to come up with a general bas-relief generation method suitable for all 2D paintings. Some paintings may not be abstract for bas-relief generation.One the other hand, for traditional Western painting style developed in the Renaissance,which emphasizes realism\cite{chu2004real}, previous 2D image based methods may easily handle. Most Chinese paintings are typically sparse with each brush stroke drawn very purposefully\cite{smith1997art}, such a feature can be found other painting styles. Study bas-relief generation from Chinese painting will naturally push forward the research frontier of bas-relief generation from other painting. \\
+Third, Bas-relief generation has wide applications in making objects such as commemorative medals, coins, souvenirs, and artistic sculptures for blind people.With the commonly and cheaply available 3D printing facilities, there is a growing trend in the need of bas-relief art products.\\
 
-As mentioned above, bas-relief is a art form part way between 2D painting and a full 3D sculpture\cite{benzaid2017analysis}\cite{weyrich2007digital}\cite{kerber2009feature}\cite{kerber2012computer}\cite{zeng2014region} .
-
-Bas-relief generation has wide applications in making objects such as commemorative medals, coins, souvenirs, and artistic sculptures for blind people, while current methods are not suitable for bas-relief generation based on Chinese paintings. 
-
+Therefore, designing an efficient method for bas-relief generation from Chinese painting is important both theoretically and practically.
 
 
 \section{Contribution of Current Work}
@@ -43,10 +43,8 @@ Our contributions include,
 (3) Recomposition in bas-relief design. Artists may redefine the brush strokes’ order and shapes by sketches, which enable recomposition in bas-relief design, making it a useful tool for sculpture artists.
 
 
-
-
-Currently, our research focus on brush paintings with relatively sparse strokes. Experiments show that our method can effectively generate digital bas-reliefs for a range of input images, including some Chinese paintings and rose-mailing paintings. We also demonstrate the utility of the resulting decompositions for image recoloring and image object insertion and animation.
-
+Our experiments show that our method can effectively generate digital bas-reliefs for a range of input images, including Chinese paintings and some rosemailing paintings. 
+We also demonstrate the utility of the decomposed brush strokes for image recoloring and image object insertion and animation.
 
 \section{Overview}  As showed in Figure \ref{pip}, the approach performs in three steps:
 

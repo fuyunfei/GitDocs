@@ -109,6 +109,16 @@ Songhua Xu, Yingqing Xu, Sing~Bing Kang, David~H Salesin, Yunhe Pan, and
 \newblock Animating chinese paintings through stroke-based decomposition.
 \newblock {\em ACM Transactions on Graphics (TOG)}, 25(2):239--267, 2006.
 
+\bibitem{chu2004real}
+Nelson~SH Chu and Chiew-Lan Tai.
+\newblock Real-time painting with an expressive virtual chinese brush.
+\newblock {\em IEEE Computer Graphics and applications}, 24(5):76--85, 2004.
+
+\bibitem{da1981chinese}
+Kwo Da-Wei.
+\newblock Chinese brushwork: its history, aesthetics and techniques.
+\newblock 1981.
+
 \bibitem{zhang1999shape}
 Ruo Zhang, Ping-Sing Tsai, James~Edwin Cryer, and Mubarak Shah.
 \newblock Shape-from-shading: a survey.

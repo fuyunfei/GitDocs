@@ -9,47 +9,48 @@ Repeated entry---line 883 of file ref.bib
 I'm skipping whatever remains of this entry
 Warning--can't use both volume and number fields in weyrich2007digital
 Warning--can't use both volume and number fields in kerber2012computer
+Warning--empty journal in da1981chinese
 Warning--can't use both volume and number fields in richardt2014vectorising
 Warning--can't use both volume and number fields in mccann2012soft
-You've used 38 entries,
+You've used 40 entries,
             1791 wiz_defined-function locations,
-            667 strings with 10145 characters,
-and the built_in function-call counts, 11194 in all, are:
-= -- 1069
-> -- 454
+            679 strings with 10393 characters,
+and the built_in function-call counts, 11544 in all, are:
+= -- 1101
+> -- 466
 < -- 25
-+ -- 165
-- -- 127
-* -- 760
-:= -- 1625
-add.period$ -- 127
-call.type$ -- 38
-change.case$ -- 36
++ -- 170
+- -- 130
+* -- 780
+:= -- 1683
+add.period$ -- 133
+call.type$ -- 40
+change.case$ -- 38
 chr.to.int$ -- 0
-cite$ -- 42
-duplicate$ -- 531
-empty$ -- 1064
-format.name$ -- 127
-if$ -- 2608
+cite$ -- 45
+duplicate$ -- 548
+empty$ -- 1100
+format.name$ -- 130
+if$ -- 2683
 int.to.chr$ -- 0
-int.to.str$ -- 38
-missing$ -- 37
-newline$ -- 192
-num.names$ -- 38
-pop$ -- 127
+int.to.str$ -- 40
+missing$ -- 39
+newline$ -- 202
+num.names$ -- 40
+pop$ -- 133
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 309
+skip$ -- 316
 stack$ -- 0
-substring$ -- 820
-swap$ -- 211
+substring$ -- 839
+swap$ -- 212
 text.length$ -- 25
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 117
-width$ -- 40
-write$ -- 437
+warning$ -- 5
+while$ -- 121
+width$ -- 42
+write$ -- 457
 (There was 1 error message)
