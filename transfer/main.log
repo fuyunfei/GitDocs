@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.18)  1 NOV 2017 22:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.18)  6 NOV 2017 00:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -695,10 +695,10 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: ./pic/overview.pdf Graphic file (type pdf)
 
 <use ./pic/overview.pdf>
-Package pdftex.def Info: ./pic/overview.pdf used on input line 10.
+Package pdftex.def Info: ./pic/overview.pdf used on input line 8.
 (pdftex.def)             Requested size: 415.14365pt x 508.6915pt.
 
-Overfull \hbox (25.14365pt too wide) in paragraph at lines 10--11
+Overfull \hbox (25.14365pt too wide) in paragraph at lines 8--9
  [][] 
  []
 
@@ -706,7 +706,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.14 
+l.12 
       [1] [2 <./pic/overview.pdf>]) (./sec/terminology.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 2--36
 
@@ -768,47 +768,66 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 10.
 
-Overfull \hbox (3.20374pt too wide) in paragraph at lines 17--22
-[]\OT1/cmr/bx/n/12 2D im-age based: \OT1/cmr/m/n/12 There have been some bas-re
-lief pro-duc-tion ap-proaches
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--22
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
 [6
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 23--26
+Underfull \hbox (badness 10000) in paragraph at lines 13--23
 
  []
 
-[7]
-Overfull \hbox (0.27466pt too wide) in paragraph at lines 43--50
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--23
+
+ []
+
+[7] [8]
+Overfull \hbox (0.27466pt too wide) in paragraph at lines 37--44
 \OT1/cmr/m/n/12 (3) Re-com-po-si-tion in bas-relief de-sign. Artists may re-de-
 fine the brush strokes'
  []
 
 
-LaTeX Warning: Reference `point cloud' on page 8 undefined on input line 53.
+LaTeX Warning: Reference `point cloud' on page 9 undefined on input line 53.
 
-[8] [9]) (./sec/Literature.tex
+[9] [10]) (./sec/Literature.tex
 Chapter 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--10
 
  []
 
-[10
 
-]
 Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
+[11
 
+]
 Underfull \hbox (badness 10000) in paragraph at lines 16--18
 
  []
@@ -818,21 +837,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--24
 
  []
 
-[11] [12]
+[12] [13]
 
-LaTeX Warning: Reference `mser:alpha' on page 13 undefined on input line 38.
+LaTeX Warning: Reference `mser:alpha' on page 14 undefined on input line 38.
 
-[13] [14]) (./main.bbl [15
+[14] [15]) (./main.bbl [16
 
-] [16]
-Underfull \hbox (badness 1215) in paragraph at lines 126--132
+]
+Underfull \hbox (badness 1215) in paragraph at lines 90--96
 []\OT1/cmr/m/n/12 Daniel S^^Rykora, Ladislav Ka-van, Mar-tin []Cad^^S^^Pk, Ond^
 ^Trej Jamri^^Tska,
  []
 
-[17])
+[17] [18])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
- [18]
+ [19]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 55.
@@ -844,13 +863,13 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 55.
  ) 
 Here is how much of TeX's memory you used:
- 7845 strings out of 494910
- 115462 string characters out of 6179835
- 194603 words of memory out of 5000000
- 10940 multiletter control sequences out of 15000+600000
+ 7854 strings out of 494910
+ 115613 string characters out of 6179835
+ 194725 words of memory out of 5000000
+ 10944 multiletter control sequences out of 15000+600000
  12307 words of font info for 45 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 42i,6n,40p,1156b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,6n,40p,1324b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/tex
@@ -858,10 +877,10 @@ live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (19 pages, 1170250 bytes).
+Output written on main.pdf (20 pages, 1173314 bytes).
 PDF statistics:
- 325 PDF objects out of 1000 (max. 8388607)
- 276 compressed objects within 3 object streams
- 72 named destinations out of 1000 (max. 500000)
- 102 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 361 PDF objects out of 1000 (max. 8388607)
+ 310 compressed objects within 4 object streams
+ 77 named destinations out of 1000 (max. 500000)
+ 110 words of extra memory for PDF output out of 10000 (max. 10000000)
 

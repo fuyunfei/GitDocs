@@ -2,27 +2,24 @@
 
 \section{Background}
 
-Relief is a kind of sculpture in which 3D sculpture are carved into a relatively flat surface. In essence, it creates a bridge between a full 3D sculpture and a 2D painting. As an artistic form, relief spans the continuum between a 2D painting and a 3D sculpture\cite{weyrich2007digital}. On this spectrum,high relief is closest to full 3D, whereas flatter artworks are described as bas-relief. Among all the sculpture forms, bas-relief is the closest to 2D paintings\cite{kerber2009feature} \cite{barron2012color}.\\ \\
+Relief is a kind of sculpture in which 3D sculpture are carved into a relatively flat surface. In essence, it creates a bridge between a full 3D sculpture and a 2D painting. On this spectrum,high relief is closest to full 3D, whereas flatter artworks are described as bas-relief. Among all the sculpture forms, bas-relief is the closest to 2D paintings\cite{kerber2009feature} \cite{barron2012color}.\\ \\
 Bas-relief sculpting has been practiced for thousands of years.Since antiquity, artisans from many ancient cultures(including Greek, Persian, Egyptian, Mayan, and Indian art) have created bas-reliefs.
-Today bas-reliefs are commonly found in a variety of media, commemorative medals, coins, souvenirs, 2.5D animation,and artistic sculptures for blind people. However, crafting bas-reliefs is a laborious, challenging and time consuming process.Simplifying the process of generating bas-relief has been an interesting topic of research in the past decade\cite{kerber2012computer}. \\ \\ 
-In general, the bas-relief generation methods can be classified in two different categories:
+Today bas-reliefs are commonly found in a variety of media, commemorative medals, coins, souvenirs, 2.5D animation,and artistic sculptures for blind people. However, crafting bas-reliefs is a laborious, challenging and time consuming process. And with the commonly and cheaply available 3D printing facilities, there is a growing trend in the need of bas-relief art products.There are many ways to reach the same goals more easily with the help of computers. In the past two decades, a sizable amount of research has gone into developing bas-relief generation methods \cite{benzaid2017analysis}.\\ \\ 
+Bas-relief is regarded as an art form part way between 3D sculpture and 2D painting \cite{benzaid2017analysis}\cite{barron2012color}\cite{weyrich2007digital}\cite{kerber2009feature}\cite{kerber2012computer}.In general, the existing bas-relief generation methods can also be classified in two different categories with respect to their input\cite{benzaid2017analysis}:
 \begin{itemize}
  \item 3D model based : using a 3D model (sculpture) as input 
- \item 2D image based : using a 2D image as input
+ \item 2D image based : using a 2D image as input \\ \\
 \end{itemize} 
-
-\textbf{3D model based:} Various existing bas-relief production methods have demonstrate how to compress 3D sculpture(model) into bas-relief \cite{weyrich2007digital}and\cite{kerber2009feature}. However,this approach requires a 3D model as a starting point. 
-
-
-\textbf{2D image based:}
-There have been some bas-relief production approaches available based on 2D image in\cite{zeng2014region}\cite{wu2013making} and \cite{alexa2010reliefs}. These approaches almost follow the “bas-relief ambiguity”\cite{belhumeur1999bas}, that is, roughly speaking, from a frontal view the sculpture looks like a full 3D object while a side-view reveals the disproportional depth. 
-However, these image based method are focusing on general photograph, which unsuited for specific problems for paintings, such as stroke overlapping and its transparency.  \\ \\ 
-As mentioned above, bas-relief is a art form part way between 2D painting and a full 3D sculpture \cite{weyrich2007digital}.And among all the sculpture forms, bas-relief is the closest to 2D paintings\cite{kerber2009feature} \cite{barron2012color}.
-Little is done in the area of bas-relief generation from artistic paintings, as maintaining the information of the brush paintings proves much trickier than simply manipulating the height of the contour lines. In the case of bas-reliefs, although there is no 3D model available, pseudo 3D effect reflecting the style and subtlety is crucial in preserving the artistic essence.
-
-The aim of our research is to provide a new tool allowing user to convert existing brush paintings to bas-reliefs. We also argue that because traditional paintings are produced with individual strokes, ‘3D bas-relief strokes’ will enable them to ‘paint/sculpt’ a bas-relief naturally, especially if they wanted to quickly convert an existing painting into a relief. With the commonly and cheaply available 3D printing facilities, there is a growing trend in the need of bas-relief art products.\\ \\ 
-\textbf{Stroke segmentation:}
-A brush painting can be regarded as the union of a set of hypothetical strokes by a brush \cite{xu2006animating}. Differing from the other bas-relief generation methods, our method will honor this very feature by constructing the brush strokes individually as 3D geometric entities. This however demands to conquer several challenges. First, each brush stroke covers a region on the canvas and they may overlap each other, some quite heavily in a painting. To make sure the information is retained, every stroke has to be faithfully extracted. Second, spatial occlusion has to be dealt with, since artists are used to depicting it through controlling the transparency of strokes as one of the art elements. Third, as an artistic tool, the generated bas-relief should be further editable allowing the artist to rearrange, tweaking and reshaping the extracted strokes.
+\textbf{3D model based:}\\ How to generate a bas-relief from a 3D model? The generation of bas-relief from 3D model was first studied in the pioneering work of \cite{cignoni1997computer}, then various existing 3D model based methods have demonstrate how to compress 3D sculpture(model) into bas-relief \cite{weyrich2007digital}\cite{kerber2009feature}\cite{song2007automatic}\cite{sun2009bas} . However,this approach requires a 3D model as a starting point. \\ \\
+\textbf{2D image based:}\\On the other hand, how to generate a bas-relief from a 2D painting? \\ There have been some bas-relief generation approaches available based on 2D image in\cite{zeng2014region}\cite{wu2013making} and \cite{alexa2010reliefs}. These approaches almost follow the “bas-relief ambiguity”\cite{belhumeur1999bas}, that is, roughly speaking, from a frontal view the sculpture looks like a full 3D object while a side-view reveals the disproportional depth. 
+A 2D painting can be regarded a image,however, these image based method are focusing on general photograph from real scene,assuming illumination and reflectance are known, and the image is formed from lighting and shading, which obviously unsuited for 2D paintings. Another clear shortcoming is such methods can’t take the
+Some research focus on bas-relief generation from 2D image of line drawing \cite{kolomenkin2011reconstruction}\cite{varley2002estimating}\cite{malik1987interpreting}\cite{sykora2014ink}.However,line drawing based methods do not consider how to generate bas-reliefs with surface details: their approaches are limited to using information contained in a line drawing, which are not suited for paintings which contain information such as color,texture and stroke shape,etc. \\ \\ 
+As mentioned above, bas-relief is a art form part way between 2D painting and a full 3D sculpture\cite{benzaid2017analysis}\cite{weyrich2007digital}\cite{kerber2009feature}\cite{kerber2012computer}\cite{zeng2014region} .And among all the sculpture forms, bas-relief is the closest to 2D paintings,as claimed by \cite{kerber2009feature} \cite{barron2012color}, while how to generate bas-relief from artistic paintings remains a problem . \\ \\  
+The aim of our research is to provide a method to generate a bas-relief from a Chinese painting. We also argue that because most Chinese paintings are produced with individual brush strokes, generating bas-relief surface from each brush stroke would preserve the original features of the painting.\\
+In our bas-relief generation process, although there is no 3D model available from input Chinese painting, preserve the style and features of the painting is crucial in preserving the artistic essence.\\ 
+Most Chinese paintings are typically sparse with each brush stroke drawn very purposefully\cite{smith1997art},and in Chinese painting each stroke exists on its own as a piece of art\cite{girshick2004simulating}.
+A Chinese painting can be regarded as the union of brush strokes \cite{xu2006animating}. Differing from the other bas-relief generation methods, our method will honor this very feature by constructing bas-relief surface from the brush strokes individually. This however demands to conquer several challenges. \\
+First, each brush stroke covers a region on the canvas and they may overlap each other, some quite heavily in a painting. To make sure the information is retained, every stroke has to be faithfully extracted.\\ Second,unlike previous 2D image based methods focusing on photograph, a painting does not obey the rules of lighting and shading, which increase the difficulty to mimic the details on bas-relief surface. \\Third, the generated bas-relief should be further editable allowing the artist to rearrange, tweaking and reshaping the bas-relief surface correspond to each brush strokes. \\  \\
 
 The shape, color and opacity of a stroke vary due to the shape and firmness of the brush as well as the forces the artist imposes. Although these variables add the complexity to stroke extraction, stylized strokes often follow distinct patterns. For example, Rosemaling paintings, a typical example of brush painting popular in North Europe, is a traditional form of decorative folk art that originated in the rural valleys of Norway. The Rosemailing designs use C and S strokes, feature scroll, flowing lines, floral designs, and both subtle and vibrant colors. The brush strokes may further be viewed as graphical objects which are meaningful with respect to the objects the painting portraits. Moreover, each stroke is clearly visible due to both subtle and vibrant colors. The similar properties may be found in some Chinese brush paints.
 
@@ -30,13 +27,10 @@ To extract the strokes from a brush painting, we need to identify and segment th
 
 \section{Motivation}
 
-Relief belong to a category of art that bridges the gap between 2D painting and 3D sculpting\cite{kerber2012computer}.
+As mentioned above, bas-relief is a art form part way between 2D painting and a full 3D sculpture\cite{benzaid2017analysis}\cite{weyrich2007digital}\cite{kerber2009feature}\cite{kerber2012computer}\cite{zeng2014region} .
 
-Bas-relief generation has wide applications in making objects such as commemorative medals, coins, souvenirs, and artistic sculptures for blind people, while current methods are not suitable for bas-relief generation based on Chinese brush paintings. 
+Bas-relief generation has wide applications in making objects such as commemorative medals, coins, souvenirs, and artistic sculptures for blind people, while current methods are not suitable for bas-relief generation based on Chinese paintings. 
 
-
-Previous researches 
-Bas-relief is an art form part way between sculpture and drawing. \cite{zeng2014region} 
 
 
 \section{Contribution of Current Work}
@@ -48,7 +42,13 @@ Our contributions include,
 \newline
 (3) Recomposition in bas-relief design. Artists may redefine the brush strokes’ order and shapes by sketches, which enable recomposition in bas-relief design, making it a useful tool for sculpture artists.
 
-\textbf{Overview}  As showed in Figure \ref{pip}, the approach performs in three steps:
+
+
+
+Currently, our research focus on brush paintings with relatively sparse strokes. Experiments show that our method can effectively generate digital bas-reliefs for a range of input images, including some Chinese paintings and rose-mailing paintings. We also demonstrate the utility of the resulting decompositions for image recoloring and image object insertion and animation.
+
+
+\section{Overview}  As showed in Figure \ref{pip}, the approach performs in three steps:
 
 First, based on the point cloud of the input image in RGB space (Figure \ref{point cloud}),we select the palette colors of the input brush painting, and based on the palette colors we decompose a input image into different layers with transparency.  
 
@@ -56,7 +56,7 @@ Second,  the original painting is decomposed into element brush strokes by apply
 
 Finally, based on those depth maps of strokes , we can edit the generated bas relief. For editing,we have already generated the 3D proxies for each MSER region, namely, the extracted 2D brush region, so, we can change the depth of specific stroke on bas relief,we can also stitch them on each other based on the user input and change the shape of a certain stroke with given indicated skeleton. By doing so, we fulfill the request of recomposition in bas-relief design.The resulting 3D proxies of brush strokes are sufficient to evoke the impression of the consistent 3D shapes,so that they may be further edited in 3D space. 
 
-Currently, our research focus on brush paintings with relatively sparse strokes. Experiments show that our method can effectively generate digital bas-reliefs for a range of input images, including some Chinese paintings and rose-mailing paintings. We also demonstrate the utility of the resulting decompositions for image recoloring and image object insertion and animation.
+
 
 \section{Document Structure}
 
