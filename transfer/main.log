@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.18)  6 NOV 2017 03:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.18)  6 NOV 2017 21:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -804,19 +804,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--23
 
  []
 
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 29--32
-
- []
-
-[8]
-Overfull \hbox (0.27466pt too wide) in paragraph at lines 37--44
+[7] [8]
+Overfull \hbox (0.27466pt too wide) in paragraph at lines 31--38
 \OT1/cmr/m/n/12 (3) Re-com-po-si-tion in bas-relief de-sign. Artists may re-de-
 fine the brush strokes'
  []
 
 
-LaTeX Warning: Reference `point cloud' on page 9 undefined on input line 51.
+LaTeX Warning: Reference `point cloud' on page 9 undefined on input line 45.
 
 [9] [10]) (./sec/Literature.tex
 Chapter 2.
@@ -882,10 +877,10 @@ live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (20 pages, 1174625 bytes).
+Output written on main.pdf (20 pages, 1173981 bytes).
 PDF statistics:
- 366 PDF objects out of 1000 (max. 8388607)
- 315 compressed objects within 4 object streams
+ 368 PDF objects out of 1000 (max. 8388607)
+ 317 compressed objects within 4 object streams
  79 named destinations out of 1000 (max. 500000)
  110 words of extra memory for PDF output out of 10000 (max. 10000000)
 
