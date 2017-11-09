@@ -1,7 +1,7 @@
 \clearpage
 \chapter{EXTRACTION OF BRUSH STROKES}\label{extract}
-To generated bas-relief model from brush strokes,we need to first extract brush strokes.In this chapter, we demonstrate how to extract brush strokes from generated layers by modified Maximally Stable Extremal Regions (MSERs) algorithm, and we show that our optimization is more suitable for brush stroke extraction. In this chapter, the default MSERs algorithm and our modified algorithm are explained and their main characteristics compared. By successfully extract brush strokes, our algorithm can also be used in image editing,see section \ref{editing}.\\
-The Maximally Stable Extremal Regions (MSERs) proposed in \cite{donoser2006efficient} and \cite{nister2008linear}for feature detection and image segmentation. A MSER is a 2D region detected by MSERs algorithm.  Generally,a brush stroke is considered as a closed stable region on paintings and it might be painted on different scales. MSERs have properties that form their superior performance as stable segmentation. The segmented MSER is closed under continuous geometric transformations and is invariant to affine intensity changes. Furthermore MSER are detected at different scales. So, we employ the Maximally Stable Extremal Regions (MSERs) proposed in \cite{donoser2006efficient} and \cite{nister2008linear} to extract brush strokes. MSERs algorithm requires a distinct difference between background and foreground while allowing a small variation of intensity within the selected stroke region. Usually, the brush strokes on the decomposed layers satisfy this requirement.
+To generated bas-relief model from brush strokes,we need to first extract brush strokes.In this chapter, we demonstrate how to extract brush strokes from decomposed layers by using modified Maximally Stable Extremal Regions (MSERs) algorithm, and we show that our optimization is more suitable for brush stroke extraction. In this chapter, the default MSERs algorithm \cite{donoser2006efficient} and our modified algorithm are explained and their main characteristics compared. By successfully extract brush strokes, our algorithm can also be used in image editing,see section \ref{editing}.\\
+The Maximally Stable Extremal Regions (MSERs) algorithm proposed in \cite{donoser2006efficient} is used for feature detection and image segmentation. A MSER is a 2D region detected by MSERs algorithm.  Generally,a brush stroke is considered as a closed stable region on paintings and it might be painted on different scales. MSERs have properties that form their superior performance as stable segmentation. The segmented MSER is closed under continuous geometric transformations and is invariant to affine intensity changes. Furthermore MSER are detected at different scales. So, we employ the Maximally Stable Extremal Regions (MSERs) proposed in \cite{donoser2006efficient} to extract brush strokes. MSERs algorithm requires a distinct difference between background and foreground while allowing a small variation of intensity within the selected stroke region. Usually, the brush strokes on the decomposed layers satisfy this requirement.
 However, MSERs may fail in segmentation with the following scenarios,\\ 
 (1) The brush stroke with the intensity very close to the background; \\
 (2) Two adjacent brush stroke painted by different colors with the similar intensity;\\
@@ -10,7 +10,7 @@ However, MSERs may fail in segmentation with the following scenarios,\\
 To tackle these challenges, the coherent lines \cite{kang2007coherent} is introduced into MSERs, which both enhances the edges of strokes and preserves the completeness of strokes. For completeness sake, we briefly address MSERs algorithm and then address our modification.
 \section{MSERs Algorithm}
 
-\begin{figure}[H]
+\begin{figure}[H] \label{defumser}
 	\centering
 	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
@@ -18,14 +18,14 @@ To tackle these challenges, the coherent lines \cite{kang2007coherent} is introd
 		\caption{input image}
 	\end{subfigure}
 	~  
-	\begin{subfigure}[b]{0.4\textwidth}
+	\begin{subfigure}[b]{0.4\textwidth} 
 		\centering
 		\includegraphics[width=\textwidth]{inten_mser.png}
 		\caption{MSERs of the input image}	
 	\end{subfigure}
-	\label{modifi_mser}
+
 	
-	Perform the original MSERs on the intensity of image,different color indicates different regions.
+	Perform the original MSERs on the intensity of image,different color(except black) indicates different regions.
 \end{figure}
 
 
@@ -41,14 +41,13 @@ Changing threshold, the extremal regions may further split or merge. The resulti
 where $ \left | .  \right |$  denotes the cardinality, $ S_{i}^{g} $  is the i-th region which is obtained by thresholding at an intensity value g and $\Delta $ is a stability range parameter. $  g-\Delta $ and $ g+\Delta $ are obtained by moving upward and downward respectively in the component tree from the region $ S_{i} $ until a region with intensity value   or  is found. $ \left \{ i,j,k \right \}$ are the indices of nodes of the component tree. MSERs correspond to those nodes of the component tree that have a stability value $\gamma$, which is a local minimum along the path to the root of the tree.
 
 
-\section{Modified MSERs Algorithm}
+\section{Modified MSERs Algorithm}\label{modimesr}
 
-In terms of the definition of the area change rate $\gamma$, MSERs may fail in segmentation with the following scenarios,\\
+In terms of the definition of the area change rate $ \gamma $, the default MSERs algorithm may fail in segmentation with the following scenarios,\\
 (1) The brush stroke with the intensity very close to the background; \\
 (2) Adjacent brush strokes painted by different colors with the similar intensity;\\
 (3) Overlapped brush strokes with different color.\\ 
-(4) Moreover, like the other existing segmentation approaches, the MSERs algorithm encounters over-segmentation issue as well. 
-\\
+(4) Moreover, like the other existing segmentation approaches, the MSERs algorithm encounters over-segmentation issue as well. \\
 Comparing with default MSERs algorithm use intensity of input, our extraction is performed on opacity of generated layers.By doing so,in each layer, the opacity of the background is close to zero, which can be easily filter out, see Figure \ref{mser:alpha} , so, the first scenario can be handled. \\
 The opacity of the brush strokes is always independent of the color,so two adjacent brush stroke painted by different colors would be separated into different layers, so,naturally,our extraction is suitable for the second scenario and third scenario, see Figure \ref{mser:alpha}. \\
 Moreover, we perform the layer decomposition of Eq \ref{eq:layer_sum} on a brush painting and show the intensity and opacity of one layer associated with the individual histograms in Figure \ref{histo}. It can be noted that the opacity of the layer contains richer layered details than the intensity. So,our first modification is to perform MSERs on the opacity of every layer.\\
@@ -78,25 +77,40 @@ Figure \ref{mser:alpha} shows the segmentation results by the modified MSERs, wh
 	\label{mser:alpha}
 \end{figure}
 
-\section{Comparison and Evaluation of brush stroke extraction} \label{comparevan}
-To the best of our knowledge, there is lack of study on automatic brush strokes extraction. Li et al.\cite{li2012rhythmic} present brush stroke extraction method for Vincent van Gogh's painting. To numerically evaluate their brushstroke extraction algorithm, they generated manually marked brushstrokes using 10 example regions from paintings in the collection.Based on the manually marked examples, they define two parameters which can be measured in order to evaluate the accuracy of extracted brush stroke and,therefore, can be used to compare between their method and ours: valid rate and detection rate.\\
-Valid rate:the percentage of valid automatically extracted brushstrokes. \\ Detection rate: The percentage of detected manual brushstrokes . \\
-Even through our brush stroke extraction algorithm is not designed only for van Gogh's paintings, for fair comparison, we use the van Gogh's painting listed in their research. As shown in Table 2,the valid rate and detection rate of our method is noticeably higher than Li et al.'s method \cite{li2012rhythmic} (The paint ID is given by Li et al.'s work). 
+\section{Comparison and Evaluation of Brush Stroke Extraction} \label{comparevan}
+To the best of our knowledge, there is lack of study on automatic brush strokes extraction. Li et al.\cite{li2012rhythmic} present a automatic brush stroke extraction method based on seed growing. To numerically evaluate their brush stroke extraction algorithm, they generated manually marked brush strokes using 10 example regions from van Gogh's paintings, see Figure \ref{liswork}. \\ 
+Based on the manually marked examples, they define two parameters which can be measured in order to evaluate the accuracy of extracted brush stroke and,therefore, can be used to compare between their method and ours: valid rate and detection rate.\\
+Valid rate:the percentage of valid automatically extracted brush strokes. \\ Detection rate: The percentage of detected manual brush strokes . \\
+Even through our brush stroke extraction algorithm is not designed specifically for van Gogh's paintings, for fair comparison, we use the van Gogh's painting given in their research, as shown in Figure \ref{vanourwork}.\\
+As shown in Table 2,the valid rate and detection rate of our method is noticeably higher than Li et al.'s method \cite{li2012rhythmic} (The paint ID is given by Li et al.'s work). 
+\begin{figure}[H]
+	\includegraphics[width=14cm]{strokecompare.jpg}
+	\caption{Brush strokes extraction in Li et al.'s work}
+	\label{liswork}
+\end{figure}
+\begin{figure}[H]
+	\includegraphics[width=14cm]{strokecompare1.jpg}
+	\caption{Brush strokes extraction by our method}
+	\label{vanourwork}
+\end{figure}
+
 
 \begin{figure}[H]
 	\includegraphics[width=14cm]{comstroke.pdf}
 	\label{table2}
 \end{figure}
+As shown in Table 2, our method extracts brush strokes with higher accuracy.
+
+
 
 
 
 \section{Image editing based on brush strokes}\label{editing}
 
 Once the brushstrokes are extracted,we can simply recoloring strokes by assign a RGB value to the brushstroke while keep its opacity value.
-Figure \ref{recoloring} a and \ref{recoloring} b shows recoloring strokes on three paintings respectively. As the strokes have been extracted, it is easy to separately recolor one or more strokes with different colors. However, for van Gogh oil painting, it seems tricky, since the painting is composed of lots of brushstrokes. Thus, we only recolor all the brushstrokes extract in one layer.
-Moreover, Figure 10 further illustrates the brushstrokes of the van Gogh oil painting, which justifies the efficiency of our brushstroke extraction method.
+Figure \ref{recoloring} a and \ref{recoloring} b shows recoloring strokes on three paintings respectively. As the strokes have been extracted, it is easy to separately recolor one or more strokes with different colors. 
 
-Figure \ref{recoloring} c shows stroke manipulation through inserting objects . One of image editing tasks is to change a specified region with a new object in a seamless and effortless manner. Here we are interested in inserting new objects into a painting while keeping the transparency of the painting. Note that the inserted objects are opaque and are inserted between  brushstrokes here. The occluded regions of the objects are visible due to the transparency of the brushstrokes. Unlike the traditional image synthesis approaches, our implementation works on the strokes, which both guarantees seamless and keep the transparency of brushstrokes on the painting.
+Figure \ref{recoloring} c shows stroke manipulation through inserting objects . One of image editing tasks is to change a specified region with a new object in a seamless and effortless manner. Here we are interested in inserting new objects into a painting while keeping the transparency of the painting. Note that the inserted objects are opaque and are inserted between  brush strokes here. The occluded regions of the objects are visible due to the transparency of the brush strokes. Unlike the traditional image synthesis approaches, our implementation works on the strokes, which both guarantees seamless and keep the transparency of brush strokes on the painting.
 
 
 \begin{figure}[H]

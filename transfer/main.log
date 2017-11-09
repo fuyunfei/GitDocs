@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.18)  12 NOV 2017 02:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.18)  10 NOV 2017 01:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -721,19 +721,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--36
 
  []
 
-[2] (./main.toc
-Overfull \hbox (6.24644pt too wide) in paragraph at lines 27--27
- [] [][]\OT1/cmr/bx/n/12 BAS-RELIEF GEN-ER-A-TION BASED ON BRUSH STROKE 
- []
-
-[3
+[2] (./main.toc [3
 
 ])
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
  [4] (./main.lof
-Overfull \hbox (1.08043pt too wide) in paragraph at lines 12--12
+Overfull \hbox (1.08043pt too wide) in paragraph at lines 13--13
  [][] [][]\OT1/cmr/m/n/12 Comparison of layer de-com-po-si-tion be-fore and af-
 ter us-ing $\OML/cmm/m/it/12 E[]$ 
  []
@@ -747,208 +742,276 @@ ter us-ing $\OML/cmm/m/it/12 E[]$
 ] (./sec/intro.tex
 Chapter 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--11
+Underfull \hbox (badness 10000) in paragraph at lines 4--9
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--11
+Underfull \hbox (badness 10000) in paragraph at lines 4--9
 
  []
 
-[6
-
-]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 12.
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 10.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 10.
+ [6
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--25
+]
+Overfull \hbox (8.38614pt too wide) in paragraph at lines 14--22
+\OT1/cmr/m/n/12 Some re-search fo-cus on bas-relief gen-er-a-tion from a line d
+raw-ing [[]][[]][[]][[]].
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--22
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 27--34
+Underfull \hbox (badness 10000) in paragraph at lines 24--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--34
+Underfull \hbox (badness 10000) in paragraph at lines 24--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--34
+Underfull \hbox (badness 10000) in paragraph at lines 32--37
 
  []
 
-[8] [9] [10] [11]) (./sec/Literature.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--37
+
+ []
+
+[8]
+Overfull \hbox (10.08334pt too wide) in paragraph at lines 38--42
+\OT1/cmr/m/n/12 very purposefully[[]], and such a fea-ture can be found other p
+aint-ing styles,such
+ []
+
+[9]
+Overfull \hbox (3.44684pt too wide) in paragraph at lines 44--53
+\OT1/cmr/m/n/12 Chapter 3: Overview of pro-posed ap-proach. This sec-tion ex-pl
+ains the method-
+ []
+
+[10]) (./sec/Literature.tex
 Chapter 2.
+<./pic/liter-review.jpg, id=250, 766.865pt x 286.06876pt>
+File: ./pic/liter-review.jpg Graphic file (type jpg)
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--10
+<use ./pic/liter-review.jpg>
+Package pdftex.def Info: ./pic/liter-review.jpg used on input line 5.
+(pdftex.def)             Requested size: 426.79134pt x 159.2109pt.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 5--6
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--17
+
+ []
+
+[11
+
+ <./pic/liter-review.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
-
- []
-
-[12
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 16--18
+Underfull \hbox (badness 10000) in paragraph at lines 23--25
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--24
+Overfull \hbox (0.61816pt too wide) in paragraph at lines 23--25
+\OT1/cmr/m/n/12 which may work well for re-al-is-tic pho-tographs rather than p
+aint-ings,especially
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 27--31
 
  []
 
-[13] [14] [15] [16]) (./sec/overview.tex
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 39--49
+
+ []
+
+[14] [15]) (./sec/overview.tex
 Chapter 3.
-<./pic/lotusoverview.png, id=307, 2155.05125pt x 2629.825pt>
+<./pic/lotusoverview.png, id=334, 2155.05125pt x 2629.825pt>
 File: ./pic/lotusoverview.png Graphic file (type png)
 
 <use ./pic/lotusoverview.png>
 Package pdftex.def Info: ./pic/lotusoverview.png used on input line 5.
 (pdftex.def)             Requested size: 388.0898pt x 473.6018pt.
- [17
 
-] [18 <./pic/lotusoverview.png>] [19])
-(./sec/layer.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--13
+
+ []
+
+[16
+
+] [17 <./pic/lotusoverview.png>] [18]) (./sec/layer.tex
 Chapter 4.
-<./pic/5.png, id=332, 365.365pt x 514.92375pt>
+<./pic/5.png, id=359, 365.365pt x 514.92375pt>
 File: ./pic/5.png Graphic file (type png)
  <use ./pic/5.png>
 Package pdftex.def Info: ./pic/5.png used on input line 10.
 (pdftex.def)             Requested size: 84.0043pt x 118.3982pt.
 
-<./pic/cube1.png, id=333, 859.21pt x 754.82pt>
+<./pic/cube1.png, id=360, 859.21pt x 754.82pt>
 File: ./pic/cube1.png Graphic file (type png)
  <use ./pic/cube1.png>
 Package pdftex.def Info: ./pic/cube1.png used on input line 12.
 (pdftex.def)             Requested size: 134.76254pt x 118.3982pt.
- [20
+ [19
 
 ]
-<./pic/convex.png, id=343, 2410.00375pt x 808.01875pt>
+<./pic/convex.png, id=370, 2410.00375pt x 808.01875pt>
 File: ./pic/convex.png Graphic file (type png)
  <use ./pic/convex.png>
 Package pdftex.def Info: ./pic/convex.png used on input line 26.
 (pdftex.def)             Requested size: 317.79787pt x 106.55566pt.
 
-[21 <./pic/5.png> <./pic/cube1.png (PNG copy)>]
-<./pic/Layers.png, id=348, 2388.925pt x 808.01875pt>
+[20 <./pic/5.png> <./pic/cube1.png (PNG copy)>]
+<./pic/Layers.png, id=375, 2388.925pt x 808.01875pt>
 File: ./pic/Layers.png Graphic file (type png)
  <use ./pic/Layers.png>
 Package pdftex.def Info: ./pic/Layers.png used on input line 38.
 (pdftex.def)             Requested size: 350.01224pt x 118.3982pt.
 
-[22 <./pic/convex.png> <./pic/Layers.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+ []
+
+[21 <./pic/convex.png> <./pic/Layers.png>]
 File: ./pic/5.png Graphic file (type png)
  <use ./pic/5.png>
-Package pdftex.def Info: ./pic/5.png used on input line 68.
+Package pdftex.def Info: ./pic/5.png used on input line 70.
 (pdftex.def)             Requested size: 113.81102pt x 160.3947pt.
 
-<./pic/5etf.png, id=360, 363.3575pt x 510.90875pt>
+<./pic/5etf.png, id=388, 363.3575pt x 510.90875pt>
 File: ./pic/5etf.png Graphic file (type png)
  <use ./pic/5etf.png>
-Package pdftex.def Info: ./pic/5etf.png used on input line 70.
+Package pdftex.def Info: ./pic/5etf.png used on input line 72.
 (pdftex.def)             Requested size: 113.81102pt x 160.025pt.
 
-[23] <./pic/com_layer1.png, id=371, 365.365pt x 514.92375pt>
+[22] <./pic/com_layer1.png, id=400, 365.365pt x 514.92375pt>
 File: ./pic/com_layer1.png Graphic file (type png)
 
 <use ./pic/com_layer1.png>
-Package pdftex.def Info: ./pic/com_layer1.png used on input line 86.
+Package pdftex.def Info: ./pic/com_layer1.png used on input line 91.
 (pdftex.def)             Requested size: 142.26378pt x 200.4973pt.
 
-<./pic/com_layer2.png, id=372, 365.365pt x 514.92375pt>
+<./pic/com_layer2.png, id=401, 365.365pt x 514.92375pt>
 File: ./pic/com_layer2.png Graphic file (type png)
 
 <use ./pic/com_layer2.png>
-Package pdftex.def Info: ./pic/com_layer2.png used on input line 87.
+Package pdftex.def Info: ./pic/com_layer2.png used on input line 92.
 (pdftex.def)             Requested size: 142.26378pt x 200.4973pt.
- [24 <./pic/5etf.png>]
+ [23 <./pic/5etf.png>]
 File: ./pic/5etf.png Graphic file (type png)
  <use ./pic/5etf.png>
-Package pdftex.def Info: ./pic/5etf.png used on input line 105.
+Package pdftex.def Info: ./pic/5etf.png used on input line 110.
 (pdftex.def)             Requested size: 142.26378pt x 200.03319pt.
 
-<./pic/edge.png, id=384, 365.365pt x 514.92375pt>
+<./pic/edge.png, id=412, 365.365pt x 514.92375pt>
 File: ./pic/edge.png Graphic file (type png)
  <use ./pic/edge.png>
-Package pdftex.def Info: ./pic/edge.png used on input line 106.
+Package pdftex.def Info: ./pic/edge.png used on input line 111.
 (pdftex.def)             Requested size: 142.26378pt x 200.4973pt.
- [25 <./pic/com_layer1.png> <./pic/com_layer2.png>]
-<./pic/com_layer3.png, id=394, 365.365pt x 514.92375pt>
+ [24 <./pic/com_layer1.png> <./pic/com_layer2.png>]
+<./pic/com_layer3.png, id=423, 365.365pt x 514.92375pt>
 File: ./pic/com_layer3.png Graphic file (type png)
 
 <use ./pic/com_layer3.png>
-Package pdftex.def Info: ./pic/com_layer3.png used on input line 114.
+Package pdftex.def Info: ./pic/com_layer3.png used on input line 119.
 (pdftex.def)             Requested size: 142.26378pt x 200.4973pt.
 
-<./pic/com_layer4.png, id=395, 365.365pt x 514.92375pt>
+<./pic/com_layer4.png, id=424, 365.365pt x 514.92375pt>
 File: ./pic/com_layer4.png Graphic file (type png)
 
 <use ./pic/com_layer4.png>
-Package pdftex.def Info: ./pic/com_layer4.png used on input line 115.
+Package pdftex.def Info: ./pic/com_layer4.png used on input line 120.
 (pdftex.def)             Requested size: 142.26378pt x 200.4973pt.
- [26 <./pic/edge.png (PNG copy)> <./pic/com_layer3.png> <./pic/com_layer4.png>]
 
-<./pic/intensity.png, id=404, 365.365pt x 514.92375pt>
+
+Package caption Warning: \label without proper reference on input line 108.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `etfline' on page 25 undefined on input line 124.
+
+[25 <./pic/edge.png (PNG copy)> <./pic/com_layer3.png> <./pic/com_layer4.png>]
+<./pic/intensity.png, id=435, 365.365pt x 514.92375pt>
 File: ./pic/intensity.png Graphic file (type png)
 
 <use ./pic/intensity.png>
-Package pdftex.def Info: ./pic/intensity.png used on input line 125.
+Package pdftex.def Info: ./pic/intensity.png used on input line 130.
 (pdftex.def)             Requested size: 155.99762pt x 219.84933pt.
- <./pic/alpha.png, id=405, 365.365pt x 514.92375pt>
+ <./pic/alpha.png, id=436, 365.365pt x 514.92375pt>
 File: ./pic/alpha.png Graphic file (type png)
 
 <use ./pic/alpha.png>
-Package pdftex.def Info: ./pic/alpha.png used on input line 131.
+Package pdftex.def Info: ./pic/alpha.png used on input line 136.
 (pdftex.def)             Requested size: 155.99762pt x 219.84933pt.
- <./pic/h1.png, id=406, 144.2115pt x 92.9655pt>
+ <./pic/h1.png, id=437, 144.2115pt x 92.9655pt>
 File: ./pic/h1.png Graphic file (type png)
 
 <use ./pic/h1.png>
-Package pdftex.def Info: ./pic/h1.png used on input line 139.
+Package pdftex.def Info: ./pic/h1.png used on input line 144.
 (pdftex.def)             Requested size: 155.99762pt x 100.5686pt.
- <./pic/h2.png, id=408, 143.226pt x 92.3085pt>
+ <./pic/h2.png, id=439, 143.226pt x 92.3085pt>
 File: ./pic/h2.png Graphic file (type png)
 
 <use ./pic/h2.png>
-Package pdftex.def Info: ./pic/h2.png used on input line 144.
+Package pdftex.def Info: ./pic/h2.png used on input line 149.
 (pdftex.def)             Requested size: 155.99762pt x 100.54382pt.
- [27 <./pic/h1.png> <./pic/h2.png> <./pic/intensity.png> <./pic/alpha.png (PNG 
-copy)>] <./pic/rmse.pdf, id=427, 710.655pt x 1003.75pt>
+ [26 <./pic/h1.png> <./pic/h2.png> <./pic/intensity.png> <./pic/alpha.png (PNG 
+copy)>] <./pic/rmse.pdf, id=460, 710.655pt x 1003.75pt>
 File: ./pic/rmse.pdf Graphic file (type pdf)
 
 <use ./pic/rmse.pdf>
-Package pdftex.def Info: ./pic/rmse.pdf used on input line 172.
+Package pdftex.def Info: ./pic/rmse.pdf used on input line 179.
 (pdftex.def)             Requested size: 483.69684pt x 683.19957pt.
 
-Overfull \hbox (93.69684pt too wide) in paragraph at lines 172--174
+Overfull \hbox (93.69684pt too wide) in paragraph at lines 179--181
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 105.69957pt on input line 175.
+LaTeX Warning: Float too large for page by 105.69957pt on input line 182.
 
-) [28] [29 <./pic/rmse.pdf>] (./sec/extract.tex
+) [27] [28 <./pic/rmse.pdf>] (./sec/extract.tex
 Chapter 5.
-
-Overfull \hbox (14.24445pt too wide) in paragraph at lines 3--11
-\OT1/cmr/m/n/12 from gen-er-ated lay-ers by mod-i-fied Max-i-mally Sta-ble Ex-t
-remal Re-gions (MSERs)
- []
-
-[30
+[29
 
 
 ]
@@ -957,53 +1020,74 @@ File: ./pic/5.png Graphic file (type png)
 Package pdftex.def Info: ./pic/5.png used on input line 17.
 (pdftex.def)             Requested size: 155.99762pt x 219.84933pt.
 
-<./pic/inten_mser.png, id=462, 376.40625pt x 527.9725pt>
+<./pic/inten_mser.png, id=491, 376.40625pt x 527.9725pt>
 File: ./pic/inten_mser.png Graphic file (type png)
 
 <use ./pic/inten_mser.png>
 Package pdftex.def Info: ./pic/inten_mser.png used on input line 23.
 (pdftex.def)             Requested size: 155.99762pt x 218.81447pt.
- [31 <./pic/inten_mser.png>] [32]
-<./pic/layer_sum.png, id=477, 1170.3725pt x 1834.855pt>
+ [30 <./pic/inten_mser.png>] [31]
+<./pic/layer_sum.png, id=507, 1170.3725pt x 1834.855pt>
 File: ./pic/layer_sum.png Graphic file (type png)
 
 <use ./pic/layer_sum.png>
-Package pdftex.def Info: ./pic/layer_sum.png used on input line 76.
+Package pdftex.def Info: ./pic/layer_sum.png used on input line 75.
 (pdftex.def)             Requested size: 284.52756pt x 446.05771pt.
- [33]
-Overfull \hbox (14.33377pt too wide) in paragraph at lines 81--81
-[]\OT1/cmr/bx/n/17.28 Comparison and Eval-u-a-tion of brush stroke
+ [32]
+Overfull \hbox (20.48576pt too wide) in paragraph at lines 80--80
+[]\OT1/cmr/bx/n/17.28 Comparison and Eval-u-a-tion of Brush Stroke
  []
 
-[34 <./pic/layer_sum.png>]
-<./pic/comstroke.pdf, id=490, 710.655pt x 499.8675pt>
+<./pic/strokecompare.jpg, id=517, 1699.34875pt x 520.94624pt>
+File: ./pic/strokecompare.jpg Graphic file (type jpg)
+
+<use ./pic/strokecompare.jpg>
+Package pdftex.def Info: ./pic/strokecompare.jpg used on input line 87.
+(pdftex.def)             Requested size: 398.33858pt x 122.11237pt.
+
+Overfull \hbox (8.33858pt too wide) in paragraph at lines 87--88
+[][] 
+ []
+
+[33 <./pic/layer_sum.png>]
+<./pic/strokecompare1.jpg, id=523, 1182.4175pt x 647.41875pt>
+File: ./pic/strokecompare1.jpg Graphic file (type jpg)
+
+<use ./pic/strokecompare1.jpg>
+Package pdftex.def Info: ./pic/strokecompare1.jpg used on input line 92.
+(pdftex.def)             Requested size: 398.33858pt x 218.10419pt.
+
+Overfull \hbox (8.33858pt too wide) in paragraph at lines 92--93
+[][] 
+ []
+
+[34 <./pic/strokecompare.jpg>]
+<./pic/comstroke.pdf, id=528, 710.655pt x 499.8675pt>
 File: ./pic/comstroke.pdf Graphic file (type pdf)
 
 <use ./pic/comstroke.pdf>
-Package pdftex.def Info: ./pic/comstroke.pdf used on input line 87.
+Package pdftex.def Info: ./pic/comstroke.pdf used on input line 99.
 (pdftex.def)             Requested size: 398.33858pt x 280.19084pt.
 
-Overfull \hbox (8.33858pt too wide) in paragraph at lines 87--89
+Overfull \hbox (8.33858pt too wide) in paragraph at lines 99--101
 [][]
  []
 
-[35 <./pic/comstroke.pdf>]
-<./pic/recoloring.png, id=515, 1555.8125pt x 1340.00626pt>
+[35 <./pic/strokecompare1.jpg> <./pic/comstroke.pdf>]
+<./pic/recoloring.png, id=553, 1555.8125pt x 1340.00626pt>
 File: ./pic/recoloring.png Graphic file (type png)
 
 <use ./pic/recoloring.png>
-Package pdftex.def Info: ./pic/recoloring.png used on input line 104.
+Package pdftex.def Info: ./pic/recoloring.png used on input line 118.
 (pdftex.def)             Requested size: 426.79134pt x 367.59297pt.
 
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 104--105
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 118--119
  [][] 
  []
 
 [36]) [37 <./pic/recoloring.png>] (./sec/3Dstrokes.tex
 Chapter 6.
-[38
-
-] <./pic/strokerelief.png, id=535, 1703.36375pt x 546.04pt>
+<./pic/strokerelief.png, id=571, 1703.36375pt x 546.04pt>
 File: ./pic/strokerelief.png Graphic file (type png)
 
 <use ./pic/strokerelief.png>
@@ -1014,12 +1098,24 @@ Overfull \hbox (36.79134pt too wide) in paragraph at lines 22--23
  [][] 
  []
 
+[38
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--40
+] <./pic/rose1.png, id=579, 811.03pt x 644.4075pt>
+File: ./pic/rose1.png Graphic file (type png)
+ <use ./pic/rose1.png>
+Package pdftex.def Info: ./pic/rose1.png used on input line 31.
+(pdftex.def)             Requested size: 426.79134pt x 339.11546pt.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 31--32
+ [][] 
+ []
+
+[39 <./pic/strokerelief.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 36--47
 
  []
 
-[39 <./pic/strokerelief.png>]) [40] (./sec/result.tex
+[40 <./pic/rose1.png>]) [41] (./sec/result.tex
 Chapter 7.
 
 Overfull \hbox (11.4005pt too wide) in paragraph at lines 3--14
@@ -1027,15 +1123,9 @@ Overfull \hbox (11.4005pt too wide) in paragraph at lines 3--14
 iap/mser)
  []
 
+[42
 
-Overfull \hbox (0.69272pt too wide) in paragraph at lines 3--14
-\OT1/cmr/m/n/12 vec-tor-ized us-ing NumPy/SciPy. Our im-ple-men-ta-tion is not 
-multi-threaded.In
- []
-
-[41
-
-] <./pic/performance.pdf, id=568, 499.8675pt x 710.655pt>
+] <./pic/performance.pdf, id=620, 499.8675pt x 710.655pt>
 File: ./pic/performance.pdf Graphic file (type pdf)
 
 <use ./pic/performance.pdf>
@@ -1046,40 +1136,97 @@ Overfull \hbox (8.33858pt too wide) in paragraph at lines 17--18
  [][] 
  []
 
-[42]) [43 <./pic/performance.pdf>] (./sec/appendix.tex
-<./pic/sup.pdf, id=596, page=2, 845.1575pt x 1195.46625pt>
-File: ./pic/sup.pdf Graphic file (type pdf)
+[43]) [44 <./pic/performance.pdf>] (./sec/appendix.tex
+<./pic/panda.jpg, id=647, 3144.74875pt x 1265.72874pt>
+File: ./pic/panda.jpg Graphic file (type jpg)
+ <use ./pic/panda.jpg>
+Package pdftex.def Info: ./pic/panda.jpg used on input line 5.
+(pdftex.def)             Requested size: 483.69684pt x 194.67947pt.
 
-<use ./pic/sup.pdf, page 2>
-Package pdftex.def Info: ./pic/sup.pdf, page2 used on input line 5.
-(pdftex.def)             Requested size: 483.69684pt x 684.19553pt.
-
-Overfull \hbox (93.69684pt too wide) in paragraph at lines 5--6
+Overfull \hbox (93.69684pt too wide) in paragraph at lines 5--5
  [][] 
  []
 
+<./pic/flower.jpg, id=648, 3765.06625pt x 2052.66875pt>
+File: ./pic/flower.jpg Graphic file (type jpg)
+ <use ./pic/flower.jpg>
+Package pdftex.def Info: ./pic/flower.jpg used on input line 7.
+(pdftex.def)             Requested size: 483.69684pt x 263.69287pt.
 
-LaTeX Warning: Float too large for page by 92.19553pt on input line 6.
-
-<./pic/sup.pdf, id=597, page=3, 845.1575pt x 1195.46625pt>
-File: ./pic/sup.pdf Graphic file (type pdf)
-
-<use ./pic/sup.pdf, page 3>
-Package pdftex.def Info: ./pic/sup.pdf, page3 used on input line 10.
-(pdftex.def)             Requested size: 483.69684pt x 684.19553pt.
-
-Overfull \hbox (93.69684pt too wide) in paragraph at lines 10--11
+Overfull \hbox (93.69684pt too wide) in paragraph at lines 7--8
  [][] 
  []
 
+<./pic/man.jpg, id=649, 2132.96875pt x 1044.90375pt>
+File: ./pic/man.jpg Graphic file (type jpg)
+ <use ./pic/man.jpg>
+Package pdftex.def Info: ./pic/man.jpg used on input line 11.
+(pdftex.def)             Requested size: 483.69684pt x 236.94269pt.
 
-LaTeX Warning: Float too large for page by 92.19553pt on input line 11.
+Overfull \hbox (93.69684pt too wide) in paragraph at lines 11--11
+ [][] 
+ []
 
-) [44] [45 <./pic/sup.pdf>] [46 <./pic/sup.pdf>] (./sec/conclu.tex
+<./pic/fish.jpg, id=650, 1773.62625pt x 1025.8325pt>
+File: ./pic/fish.jpg Graphic file (type jpg)
+ <use ./pic/fish.jpg>
+Package pdftex.def Info: ./pic/fish.jpg used on input line 13.
+(pdftex.def)             Requested size: 483.69684pt x 279.7647pt.
+
+Overfull \hbox (93.69684pt too wide) in paragraph at lines 13--14
+ [][] 
+ []
+
+[45 <./pic/panda.jpg> <./pic/flower.jpg>]
+<./pic/ros12.jpg, id=656, 6859.6275pt x 3336.465pt>
+File: ./pic/ros12.jpg Graphic file (type jpg)
+ <use ./pic/ros12.jpg>
+Package pdftex.def Info: ./pic/ros12.jpg used on input line 18.
+(pdftex.def)             Requested size: 483.69684pt x 235.25645pt.
+
+Overfull \hbox (93.69684pt too wide) in paragraph at lines 18--18
+ [][] 
+ []
+
+) [46 <./pic/man.jpg> <./pic/fish.jpg>] [47 <./pic/ros12.jpg>]
+(./sec/conclu.tex
 Chapter 8.
-) [47
 
-] (./main.bbl [48
+Overfull \hbox (1.87602pt too wide) in paragraph at lines 3--14
+\OT1/cmr/m/n/12 (4)Our brush stroke ex-trac-tion tech-nique has other po-ten-ti
+al uses. We demon-
+ []
+
+
+Overfull \hbox (18.11243pt too wide) in paragraph at lines 3--14
+\OT1/cmr/m/n/12 reliefs from a va-ri-ety of Chi-nese brush paint-ings (with hu-
+man, an-i-mal, flower,etc.)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--14
+
+ []
+
+[48
+
+] [49] <./pic/level_set.png, id=685, 938.50626pt x 791.95876pt>
+File: ./pic/level_set.png Graphic file (type png)
+
+<use ./pic/level_set.png>
+Package pdftex.def Info: ./pic/level_set.png used on input line 35.
+(pdftex.def)             Requested size: 284.52756pt x 240.09091pt.
+ [50 <./pic/level_set.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--52
+
+ []
+
+) [51] (./main.bbl [52
 
 ]
 Underfull \hbox (badness 1215) in paragraph at lines 96--102
@@ -1087,23 +1234,27 @@ Underfull \hbox (badness 1215) in paragraph at lines 96--102
 ^Trej Jamri^^Tska,
  []
 
-[49] [50] [51])
+[53] [54] [55] [56])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
- [52]
+ [57]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 55.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 55.
+
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 55.
  ) 
 Here is how much of TeX's memory you used:
- 8123 strings out of 494910
- 119742 string characters out of 6179835
- 197583 words of memory out of 5000000
- 11092 multiletter control sequences out of 15000+600000
+ 8228 strings out of 494910
+ 121498 string characters out of 6179835
+ 199943 words of memory out of 5000000
+ 11157 multiletter control sequences out of 15000+600000
  13855 words of font info for 51 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 42i,7n,40p,1167b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,13n,40p,1156b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
@@ -1116,10 +1267,10 @@ c/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.
 pfb>
-Output written on main.pdf (53 pages, 16358021 bytes).
+Output written on main.pdf (58 pages, 12886448 bytes).
 PDF statistics:
- 814 PDF objects out of 1000 (max. 8388607)
- 689 compressed objects within 7 object streams
- 157 named destinations out of 1000 (max. 500000)
- 381 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 925 PDF objects out of 1000 (max. 8388607)
+ 790 compressed objects within 8 object streams
+ 186 named destinations out of 1000 (max. 500000)
+ 453 words of extra memory for PDF output out of 10000 (max. 10000000)
 

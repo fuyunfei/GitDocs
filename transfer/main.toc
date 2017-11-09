@@ -2,30 +2,34 @@
 \contentsline {section}{\numberline {1.1}Background}{6}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}3D model based:}{7}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}2D image based:}{7}{subsection.1.1.2}
-\contentsline {section}{\numberline {1.2}Aim and challenges}{8}{section.1.2}
+\contentsline {section}{\numberline {1.2}Aim and Challenges}{8}{section.1.2}
 \contentsline {section}{\numberline {1.3}Motivation}{9}{section.1.3}
-\contentsline {section}{\numberline {1.4}Contribution of Current Work}{10}{section.1.4}
-\contentsline {section}{\numberline {1.5}Document Structure}{11}{section.1.5}
-\contentsline {chapter}{\numberline {2}LITERATURE REVIEW}{12}{chapter.2}
-\contentsline {section}{\numberline {2.1}Bas-relief Generation from 3D model}{12}{section.2.1}
-\contentsline {section}{\numberline {2.2}Bas-relief Generation from 2D image}{13}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Shape from shading(SFS) based methods}{13}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Line drawing based methods}{13}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Gradient and intensity based methods}{14}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Brush stroke Segmentation}{15}{section.2.3}
-\contentsline {chapter}{\numberline {3}OVERVIEW OF PROPOSED METHOD}{17}{chapter.3}
-\contentsline {chapter}{\numberline {4}LAYER DECOMPOSITION}{20}{chapter.4}
-\contentsline {section}{\numberline {4.1}Identify Paint Colors}{21}{section.4.1}
-\contentsline {section}{\numberline {4.2}Layer Decomposition Scheme}{22}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Our Modified Layer Decomposition}{24}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}Comparison of layer decompostion}{28}{section.4.3}
-\contentsline {chapter}{\numberline {5}EXTRACTION OF BRUSH STROKES}{30}{chapter.5}
-\contentsline {section}{\numberline {5.1}MSERs Algorithm}{31}{section.5.1}
-\contentsline {section}{\numberline {5.2}Modified MSERs Algorithm}{32}{section.5.2}
-\contentsline {section}{\numberline {5.3}Comparison and Evaluation of brush stroke extraction}{34}{section.5.3}
-\contentsline {section}{\numberline {5.4}Image editing based on brush strokes}{35}{section.5.4}
-\contentsline {chapter}{\numberline {6}BAS-RELIEF GENERATION BASED ON BRUSH STROKE }{38}{chapter.6}
-\contentsline {section}{\numberline {6.1}Comparisons}{39}{section.6.1}
-\contentsline {chapter}{\numberline {7}RESULTS}{41}{chapter.7}
-\contentsline {section}{\numberline {7.1}More Results}{44}{section.7.1}
-\contentsline {chapter}{\numberline {8}CONCLUSIONS }{47}{chapter.8}
+\contentsline {section}{\numberline {1.4}Document Structure}{10}{section.1.4}
+\contentsline {chapter}{\numberline {2}LITERATURE REVIEW}{11}{chapter.2}
+\contentsline {section}{\numberline {2.1}Bas-relief Generation from 3D Model}{11}{section.2.1}
+\contentsline {section}{\numberline {2.2}Bas-relief Generation from 2D Image}{12}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Photograph Based Methods}{12}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Line Drawing Based Methods}{13}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Gradient and Intensity Based Methods}{14}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Brush Stroke Segmentation}{14}{section.2.3}
+\contentsline {chapter}{\numberline {3}OVERVIEW OF PROPOSED METHOD}{16}{chapter.3}
+\contentsline {chapter}{\numberline {4}LAYER DECOMPOSITION}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Identify Paint Colors}{20}{section.4.1}
+\contentsline {section}{\numberline {4.2}Layer Decomposition Scheme}{21}{section.4.2}
+\contentsline {section}{\numberline {4.3}Our Modified Layer Decomposition}{23}{section.4.3}
+\contentsline {section}{\numberline {4.4}Comparison of layer decompostion}{27}{section.4.4}
+\contentsline {chapter}{\numberline {5}EXTRACTION OF BRUSH STROKES}{29}{chapter.5}
+\contentsline {section}{\numberline {5.1}MSERs Algorithm}{30}{section.5.1}
+\contentsline {section}{\numberline {5.2}Modified MSERs Algorithm}{31}{section.5.2}
+\contentsline {section}{\numberline {5.3}Comparison and Evaluation of Brush Stroke Extraction}{33}{section.5.3}
+\contentsline {section}{\numberline {5.4}Image editing based on brush strokes}{36}{section.5.4}
+\contentsline {chapter}{\numberline {6}BAS-RELIEF GENERATION}{38}{chapter.6}
+\contentsline {section}{\numberline {6.1}Comparisons of Bas-relief Generation}{40}{section.6.1}
+\contentsline {chapter}{\numberline {7}RESULTS}{42}{chapter.7}
+\contentsline {section}{\numberline {7.1}More Results}{45}{section.7.1}
+\contentsline {chapter}{\numberline {8}Conclusions and Future Work}{48}{chapter.8}
+\contentsline {section}{\numberline {8.1}Conclusions}{48}{section.8.1}
+\contentsline {section}{\numberline {8.2}Future Work}{49}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Refine Current Algorithm}{49}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Application in 3D Painting}{49}{subsection.8.2.2}
+\contentsline {section}{\numberline {8.3}Proposed timescale for the work:}{51}{section.8.3}

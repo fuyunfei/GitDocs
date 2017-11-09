@@ -100,6 +100,12 @@ Daniel S{\`y}kora, Ladislav Kavan, Martin {\v{C}}ad{\'\i}k, Ond{\v{r}}ej
   to hand-drawn characters.
 \newblock {\em ACM Transactions on Graphics (TOG)}, 33(2):16, 2014.
 
+\bibitem{li2012restoration}
+Zhuwen Li, Song Wang, Jinhui Yu, and Kwan-Liu Ma.
+\newblock Restoration of brick and stone relief from single rubbing images.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  18(2):177--187, 2012.
+
 \bibitem{xu2006animating}
 Songhua Xu, Yingqing Xu, Sing~Bing Kang, David~H Salesin, Yunhe Pan, and
   Heung-Yeung Shum.
@@ -119,13 +125,6 @@ Ross~B Girshick.
 Nelson~SH Chu and Chiew-Lan Tai.
 \newblock Real-time painting with an expressive virtual chinese brush.
 \newblock {\em IEEE Computer Graphics and applications}, 24(5):76--85, 2004.
-
-\bibitem{li2012rhythmic}
-Jia Li, Lei Yao, Ella Hendriks, and James~Z Wang.
-\newblock Rhythmic brushstrokes distinguish van gogh from his contemporaries:
-  findings via automated brushstroke extraction.
-\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
-  34(6):1159--1176, 2012.
 
 \bibitem{zhang1999shape}
 Ruo Zhang, Ping-Sing Tsai, James~Edwin Cryer, and Mubarak Shah.
@@ -168,12 +167,6 @@ Meili Wang, Jian Chang, Junjun Pan, and J~Zhang.
 \newblock In {\em Proceedings of the 11th IASTED International Conference
   Computer Graphics and Imaging, Innsbruck}, volume 679, page~33, 2010.
 
-\bibitem{li2012restoration}
-Zhuwen Li, Song Wang, Jinhui Yu, and Kwan-Liu Ma.
-\newblock Restoration of brick and stone relief from single rubbing images.
-\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
-  18(2):177--187, 2012.
-
 \bibitem{richardt2014vectorising}
 Christian Richardt, Jorge Lopez-Moreno, Adrien Bousseau, Maneesh Agrawala, and
   George Drettakis.
@@ -196,6 +189,13 @@ James McCann and Nancy~S Pollard.
 Jianchao Tan, Jyh-Ming Lien, and Yotam Gingold.
 \newblock Decomposing images into layers via rgb-space geometry.
 \newblock {\em ACM Transactions on Graphics (TOG)}, 36(1):7, 2016.
+
+\bibitem{li2012rhythmic}
+Jia Li, Lei Yao, Ella Hendriks, and James~Z Wang.
+\newblock Rhythmic brushstrokes distinguish van gogh from his contemporaries:
+  findings via automated brushstroke extraction.
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
+  34(6):1159--1176, 2012.
 
 \bibitem{matas2004robust}
 Jiri Matas, Ondrej Chum, Martin Urban, and Tom{\'a}s Pajdla.
@@ -245,9 +245,83 @@ Nils Ellingsgard, Unn Plahter, and Erling Skaug.
 \newblock Rosemaling i hallingdal.
 \newblock 1978.
 
+\bibitem{sethian1999level}
+James~Albert Sethian.
+\newblock {\em Level set methods and fast marching methods: evolving interfaces
+  in computational geometry, fluid mechanics, computer vision, and materials
+  science}, volume~3.
+\newblock Cambridge university press, 1999.
+
 \bibitem{nister2008linear}
 David Nist{\'e}r and Henrik Stew{\'e}nius.
 \newblock Linear time maximally stable extremal regions.
 \newblock {\em Computer Vision--ECCV 2008}, pages 183--196, 2008.
+
+\bibitem{kim2017canvox}
+Yeojin Kim, Byungmoon Kim, Jiyang Kim, and Young~J Kim.
+\newblock Canvox: High-resolution vr painting in large volumetric canvas.
+\newblock {\em arXiv preprint arXiv:1704.02724}, 2017.
+
+\bibitem{hanrahan1990direct}
+Pat Hanrahan and Paul Haeberli.
+\newblock Direct wysiwyg painting and texturing on 3d shapes: An error occurred
+  during the printing of this article that reversed the print order of pages
+  118 and 119. while we have corrected the sort order of the 2 pages in the dl,
+  the pdf did not allow us to repaginate the 2 pages.
+\newblock {\em ACM SIGGRAPH computer graphics}, 24(4):215--223, 1990.
+
+\bibitem{daily19953d}
+Julie Daily and Kenneth Kiss.
+\newblock 3d painting: Paradigms for painting in a new dimension.
+\newblock In {\em Conference companion on Human factors in computing systems},
+  pages 296--297. ACM, 1995.
+
+\bibitem{katanics2003deep}
+George Katanics and Tasso Lappas.
+\newblock Deep canvas: integrating 3d painting and painterly rendering.
+\newblock {\em Theory and Practice of Non-Photorealistic Graphics: Algorithms,
+  Methods, and Production Systems}, 10, 2003.
+
+\bibitem{kalnins2002wysiwyg}
+Robert~D Kalnins, Lee Markosian, Barbara~J Meier, Michael~A Kowalski, Joseph~C
+  Lee, Philip~L Davidson, Matthew Webb, John~F Hughes, and Adam Finkelstein.
+\newblock Wysiwyg npr: Drawing strokes directly on 3d models.
+\newblock {\em ACM Transactions on Graphics (TOG)}, 21(3):755--762, 2002.
+
+\bibitem{schmid2011overcoat}
+Johannes Schmid, Martin~Sebastian Senn, Markus Gross, and Robert~W Sumner.
+\newblock Overcoat: an implicit canvas for 3d painting.
+\newblock {\em ACM Transactions on Graphics (TOG)}, 30(4):28, 2011.
+
+\bibitem{lefebvre2005octree}
+Sylvain Lefebvre, Samuel Hornus, Fabrice Neyret, et~al.
+\newblock Octree textures on the gpu.
+\newblock {\em GPU gems}, 2:595--613, 2005.
+
+\bibitem{keefe2001cavepainting}
+Daniel~F Keefe, Daniel~Acevedo Feliz, Tomer Moscovich, David~H Laidlaw, and
+  Joseph~J LaViola~Jr.
+\newblock Cavepainting: a fully immersive 3d artistic medium and interactive
+  experience.
+\newblock In {\em Proceedings of the 2001 symposium on Interactive 3D
+  graphics}, pages 85--93. ACM, 2001.
+
+\bibitem{haeberli1990paint}
+Paul Haeberli.
+\newblock Paint by numbers: Abstract image representations.
+\newblock In {\em ACM SIGGRAPH computer graphics}, volume~24, pages 207--214.
+  ACM, 1990.
+
+\bibitem{hertzmann2003survey}
+Aaron Hertzmann.
+\newblock A survey of stroke-based rendering.
+\newblock Institute of Electrical and Electronics Engineers, 2003.
+
+\bibitem{lu2010interactive}
+Jingwan Lu, Pedro~V Sander, and Adam Finkelstein.
+\newblock Interactive painterly stylization of images, videos and 3d
+  animations.
+\newblock In {\em Proceedings of the 2010 ACM SIGGRAPH symposium on Interactive
+  3D Graphics and Games}, pages 127--134. ACM, 2010.
 
 \end{thebibliography}
