@@ -1,8 +1,6 @@
 \chapter{LAYER DECOMPOSITION}
-
-Digital painting with different layers is an integral feature of digital image editing software, such as Photoshop and Sketchbook. Layers offer an intuitive way to edit the color and geometry of components and localize changes to the desired portion of the final image. Without layers, brush stroke segmentation becomes extremely challenging, since they can overlap and blend with each other.
-
-In general, each layer represents one coat of a painting with single color that is applied with varying opacity throughout the input painting. Wrong layer decomposition may cut one stroke into different layers. It is crucial to preserve the completeness and smoothness of the brush strokes in layer decomposition. To this end, we modify the layer decomposition algorithm in  by involving the coherent lines \cite{kang2007coherent} in our implementation. In the following we first address the layer decomposition algorithm briefly and then discuss our modification. 
+Digital painting with different layers is an integral feature of digital image editing software. However, layers may never have existed for a scanned physical painting.Layers offer an intuitive way to edit the color and geometry of components and localize changes to the desired portion of the final image. Without layers, brush stroke segmentation becomes extremely challenging, since they can overlap and blend with each other.So,before extracting brush strokes, we decompose a Chinese painting into layers.\\
+In our decomposition, each layer represents one coat of a painting with single color that is applied with varying opacity throughout the input painting. Wrong layer decomposition may cut one stroke into different layers. It is crucial to preserve the completeness and smoothness of the brush strokes in layer decomposition. To this end, we modify the layer decomposition algorithm in \cite{tan2016decomposing} by involving the coherent lines \cite{kang2007coherent} in our implementation. In the following we first address the layer decomposition algorithm \cite{tan2016decomposing} briefly and then discuss our modification. 
 
 
 \section{Identify Paint Colors}
@@ -11,21 +9,21 @@ In general, each layer represents one coat of a painting with single color that 
 	\centering
 	\includegraphics[height=0.2\textheight]{5.png}
 	~~~~
-	\includegraphics[height=0.2\textheight]{pcloud.png}
+	\includegraphics[height=0.2\textheight]{cube1.png}
 	\caption{Geometry of input image pixels in RGB-space}
 	\label{point cloud}
 \end{figure}
 
-In a brush painting, one region may have been painted multiply time with different paint colors. We assume that the color on each pixel is a linear combination of the paint colors, so all the pixel color in the input painting lies the convex hall of in the RGB space as showed in Figure \ref{point cloud}. And base on such idea, we can represent each pixel color based on painted color: 
+In a brush painting, one region may have been painted multiply time with different paint colors. We assume that the color on each pixel is a linear combination of the paint colors, so all the pixel color in the input painting lies the convex hull of in the RGB space as showed in Figure \ref{point cloud} and Figure \ref{convex} , and every vertice is considered as a paint color. And base on such idea, we can represent each pixel color based on painted colors: 
 \begin{equation*}
 p=\Sigma \omega_i c_i
 \end{equation*}
 $p$ represents the color of the pixel, and $c_i$ represents the $i$-th paint color. 
-To compute the paint color, we introduced the convex hull simplifying method of Tan's work \cite{tan2016decomposing}. In which a convex hull of the colors in RGB space should be computed, while every vertice is considered as a paint color. The colors would be tightly wrapped by the convex hull, but normally there would be many vertices more than what we need, since too many vertices would result in too many layres. In Tan's work they provide a simplification method which would output manageable number of layers based on user need and the output layers with clearly differentiated colors,as showed in Figure \ref{convex}.
+To compute the paint color, we introduced the convex hull simplifying method of Tan's work \cite{tan2016decomposing}. In which a convex hull of the colors in RGB space should be computed, while every vertice is considered as a paint color. The colors would be tightly wrapped by the convex hull, but normally there would be many vertices more than what we need, since too many vertices would result in too many layers. In Tan's work \cite{tan2016decomposing} they provide a simplification method which would output manageable number of layers based on user need and the output layers with clearly differentiated colors,as showed in Figure \ref{convex}. And based on such method ,we generate a palette of paint colors of the input paintings. 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=0.18\textheight]{convex.jpg}
+	\includegraphics[height=0.18\textheight]{convex.png}
 	\caption{Convex hull of input image}
 	\label{convex}
 	\medskip
@@ -35,12 +33,18 @@ To compute the paint color, we introduced the convex hull simplifying method of 
 
 \section{Layer Decomposition Scheme}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.2\textheight]{Layers.png}
+	\caption{Decomposition layers }
+	\label{decom:4layers}
+\end{figure}
 
-The “A over B” compositing and blend mode in \cite{porter1984compositing} is described that when the pixel $A$ with color $A_{RGB}$ and translucency $\alpha_{A}$ is placed over the pixel $B$ with color $B_{RGB}$ and translucency $\alpha_{B}$, the observed color is, 
+The standard Porter-Duff “A over B” compositing operation in \cite{porter1984compositing} is described that when the pixel $A$ with color $A_{RGB}$ and translucency $\alpha_{A}$ is placed over the pixel $B$ with color $B_{RGB}$ and translucency $\alpha_{B}$, the observed color is, 
 \[  \left ( \frac{A}{B} \right )_{RGB}=\frac{\alpha_{A}A_{RGB}-(1-\alpha_{A})\alpha_{B}B_{RGB}}{\left ( \frac{A}{B} \right )_{\alpha}} \]
 where 
 \[\left ( \frac{A}{B} \right )_{\alpha} = \alpha_{A}+(1-\alpha_{A})\alpha_{B} \] 
-Each pixel’s color is viewed as the convex combination of all layers’ colors. For each pixel, the observed color p can be approximated by the recursive application of the compositing and blend model. We take as input ordered RGB layer colors through computing per-pixel opacity values for each layer. The following ‘polynomial’ regularization term penalizes the difference between the observed color p and the polynomial approximation,
+Each pixel’s color is viewed as the convex combination of all layers’ colors. For each pixel, the observed color p can be approximated by the recursive application of the compositing. We take as input ordered RGB layer colors through computing per-pixel opacity values for each layer. The following ‘polynomial’ regularization term penalizes the difference between the observed color p and the polynomial approximation based on the “A over B” compositing \cite{porter1984compositing},
 
 \[E_{polynomial}=\frac{1}{K}\left \|    C_{n}+\sum_{i=1}^{n}  \left ( \left ( C_{i-1}-C_{i} \right ) \prod_{j=i}^{n}(1-\alpha_{j}) \right )-p  \right \|^{2}\]
 
@@ -58,7 +62,7 @@ E=\omega_{polynomial}E_{polynomial}+\omega_{opaque}E_{opaque}+\omega_{spatial}E_
 \end{equation} 
 where $\omega_{polynomial} = 375 ,\omega_{opaque}=1 , \omega_{spatial}=10$. 
 
-\subsection{Modified Layer Decomposition}
+\subsection{Our Modified Layer Decomposition}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=4cm]{5.png}
@@ -68,24 +72,14 @@ where $\omega_{polynomial} = 375 ,\omega_{opaque}=1 , \omega_{spatial}=10$.
 	\label{ETF}
 \end{figure}
 
-As we can see in Figure \ref{decom:4layers},the layer decomposited , to enhance the smoothness and completeness of strokes, the coherent line drawing technique in \cite{kang2007coherent} is introduced to Eq \ref{eq:layer1} ,which is a flow-guided anisotropic filtering framework. Figure \ref{ETF} shows the edge tangent flow $($ETF$)$ field of a Rosemaling painting. First, the ETF field is involved in $E_{spatial}$.\newline
+As we can see in Figure \ref{decom:4layers},the extracted layers failed to maintain the completeness of the brush strokes, especially in the first layer. To enhance the smoothness and completeness of extracted strokes, the coherent line drawing technique in \cite{kang2007coherent} is introduced to Eq \ref{eq:layer1} ,which is a flow-guided anisotropic filtering framework.In the coherent line drawing technique, the edge tangent flow(ETF) of a image is calculated, represented by a vector $t^{new(x)} $. Here, we use vector $t^{new(x)} $ to mimic the brush stroke direction.  Figure \ref{ETF} shows the edge tangent flow $($ETF$)$ field of a Chinese painting.\newline
 The ETF field is defined as,
 \begin{equation}
  t^{new(x)}=\frac{1}{k}\sum_{y\in\Omega(x)} \varphi(x,y)t^{current}(y)\omega_{s}(x,y)\omega_{m}(x,y)\omega_{d}(x,y)
  \label{eq:layer_etf} 
 \end{equation}
 
-As showed in Figure \ref{Coherent line details }, $t(x)$ denotes the normalized tangent vector at pixel $x$, $\Omega(x)$ denotes the neighborhood of the pixel $x$, and $k$ is the term of vector normalization. The spatial weight function $\omega_{s}$ employs the radially-symmetric box filter with some radius. The magnitude weight function $\omega_{m}$ is monotonically increasing, indicating that the bigger weights are given to the neighboring pixels y whose gradient magnitudes are higher than that of the central pixel x. This ensures the preservation of the dominant edge directions. The direction weight function, $\omega_{d}$, may enhance alignment of vectors, e.g. $t(x)\cdot t(y)>0$ , while suppressing swirling flows. In addition, the sign function $\varphi(x,y)$  is employed to prevent the swirling artifact as well.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=10cm]{ETF_explain.png}
-	\caption{Coherent line details }
-	\label{Coherent line details }
-	\medskip
-	\small
-	(a) Input (b) ETF (c) Kernel at x (d) Kernel enlarged (e) Gaussian components for DoG
-\end{figure}
+$t(x)$ denotes the normalized tangent vector at pixel $x$, $\Omega(x)$ denotes the neighborhood of the pixel $x$, and $k$ is the term of vector normalization. The spatial weight function $\omega_{s}$ employs the radially-symmetric box filter with some radius. The magnitude weight function $\omega_{m}$ is monotonically increasing, indicating that the bigger weights are given to the neighboring pixels y whose gradient magnitudes are higher than that of the central pixel x. This ensures the preservation of the dominant edge directions. The direction weight function, $\omega_{d}$, may enhance alignment of vectors, e.g. $t(x)\cdot t(y)>0$ , while suppressing swirling flows. In addition, the sign function $\varphi(x,y)$  is employed to prevent the swirling artifact as well.
 
 \begin{figure}[H]
 	\centering
@@ -95,7 +89,7 @@ As showed in Figure \ref{Coherent line details }, $t(x)$ denotes the normalized 
 	\label{com eflow}
 	\medskip
 	\small
-	Comparison of layer decomposition before and after modification  at the 2nd layers. left and right show the results by using $E_{flow}$ instead of $E_{spatial}$ in Eq \ref{eq:layer1};
+	Comparison of decomposed first layer before and after modification. Left shows the original result of Eq \ref{eq:layer1} , right shows the result by using $E_{flow}$ instead of $E_{spatial}$ in Eq \ref{eq:layer1}.
 \end{figure}
 
 Involving ETF filed of Eq \ref{eq:layer_etf} in $E_{spatial}$, the smoothness penalty is rewritten as,
@@ -110,7 +104,7 @@ where $\theta$ denotes the direction of $t^{new}$, and $ \bigtriangledown_{\thet
 	\centering
 	\includegraphics[width=5cm]{5etf.png}
 	\includegraphics[width=5cm]{edge.png}
-	\caption{Edge Tangent Flow field and coherent lines of a Rosemaling painting. It contains lots of C and S strokes.}
+	\caption{Edge Tangent Flow field and coherent lines of the painting.}
 \end{figure}
 
 
@@ -125,34 +119,32 @@ Second, the coherent lines as the constraint of brush stroke edges are involved 
 Given a ETF field $t(x)$, the flow-guided anisotropic Difference of Gaussian (DoG) filter is employed, in which the kernel shape is defined by the local flow encoded in ETF field. Note that $t(x)$ represents the local edge direction. It is most likely to make the highest contrast in the perpendicular direction, that is, the gradient direction. When moving along the edge flow, the DoG filter is applied in the gradient direction. As a result, we can ‘exaggerate’ the filter output along genuine edges, while ‘attenuating’ the output from spurious edges. This not only enhances the coherence of the edges, but also suppresses noises. Iteratively applying this flow-based DoG filter results in a binary output which reaches a satisfactory level of line connectivity and illustration quality. The coherent lines can be regarded as the edges of brush strokes.
 
 \begin{figure}[H]
-	\centering
-	\begin{subfigure}[b]{0.3\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{alpha.png}
-		\caption{alpha map of layer1}
-
-	\end{subfigure}
-	~  
-	\begin{subfigure}[b]{0.3\textwidth}
+ 		\centering
+	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{intensity.png}
-		\caption{intensity map of layer1}
+		\caption{intensity map of layer2}
+	\end{subfigure}
+	~
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{alpha.png}
+		\caption{alpha map of layer2}
+	\end{subfigure}
  
-	\end{subfigure}
-\end{figure}
 
-\begin{figure}
+ 
 	\centering
-	\begin{subfigure}[b]{0.7\textwidth}
+	\begin{subfigure}[b]{0.4\textwidth}
 		\includegraphics[clip,width=\textwidth]{h1.png}
-		\caption{histogram of intensity map of layer1}
+		\caption{histogram of intensity map of layer2}
 	\end{subfigure}
-	
-	\begin{subfigure}[b]{0.7\textwidth}
+	~  	
+	\begin{subfigure}[b]{0.4\textwidth}
 		\includegraphics[clip,width=\textwidth]{h2.png}
-		\caption{histogram of transparency map of layer1}
+		\caption{histogram of alpha map of layer2}
 	\end{subfigure}
-	\caption{Comparison between transparency and intensity of layer1}
+	\caption{Comparison between transparency and intensity of layer2}
 	\label{histo}
 \end{figure}
 
@@ -173,77 +165,10 @@ E=\omega_{polynomial}E_{polynomial}+\omega_{opaque}E_{opaque}+\omega_{flow}E_{fl
 \label{eq:layer_sum}
 \end{equation} 
 
-where $\omega_{flow}=100, \omega_{edge}=20 $ for all our examples. Figure 8 shows an evaluation of the effect of changing weights for our one example in which the defaults do not produce
-the best output.
- 
-\begin{figure}[!htb]
- 
-	\begin{minipage}[t]{0.5\linewidth}
-		\centering
-		\includegraphics[width=2.2in]{modi_wflow.png}
-		\caption{fig1}
-		\label{fig:side:a}
-	\end{minipage}%
-	\begin{minipage}[t]{0.5\linewidth}
-		\centering
-		\includegraphics[width=2.2in]{modi_wflow.png}
-		\caption{fig2}
-		\label{fig:side:b}
-	\end{minipage}
- 
-%%\centering
-%%\begin{minipage}[c]{\textwidth}
-%%	\centering
-%%	\includegraphics[width=2.0in]{modi_wflow.png}
-%%	\caption{Caption for image}
-%%	\label{fig:sample_figure}
-%%\end{minipage}
-%%\begin{minipage}[c]{\textwidth}
-%%	\centering
-%%	\includegraphics[width=2.0in]{modi_wflow.png}
-%%	\caption{Caption for image}
-%%	\label{fig:sample_figure}
-%%\end{minipage}
-%%\begin{minipage}[c]{\textwidth}
-%%	\centering
-%%	\includegraphics[width=2.0in]{modi_wflow.png}
-%%	\caption{Caption for image}
-%%	\label{fig:sample_figure}
-%%\end{minipage}	
-%	\centering
-%
-%	\begin{subfigure}[b]{0.7\textwidth}
-%		\includegraphics[clip,width=\textwidth]{modi_wflow.pdf}
-%		\caption{histogram of intensity map of layer1}
-%	\end{subfigure}
-%%
-%	\begin{subfigure}[b]{0.7\textwidth}
-%		\includegraphics[clip,width=\textwidth]{modi_wopaque.pdf}
-%		\caption{histogram of transparency map of layer1}
-%	\end{subfigure}
-%	
-%	\begin{subfigure}[b]{0.7\textwidth}
-%		\includegraphics[clip,width=\textwidth]{modi_wedge.pdf}
-%		\caption{histogram of transparency map of layer1}
-%	\end{subfigure}
-%	
-%	\caption{Comparison between transparency and intensity of layer1}
-%	\label{modi_para}
-\end{figure}
+where $\omega_{flow}=100, \omega_{edge}=20 $ for all our examples. Figure 8 shows an evaluation of the effect of changing weights.
 
-
-
-
-
-
-
-
-
-
-
-
-
-For comparison, we perform the schemes of Eq \ref{eq:layer1} and Eq \ref{eq:layer_sum} separately on the same set of brush paintings and compare the root-mean-square-error (RMSE) of the opacity of the coherent lines on each layer shown in Table 1. The RMSE by Eq \ref{eq:layer_sum} is noticeably less than that by Eq \ref{eq:layer1}. This means that the coherent lines have been embedded into the opacity of each layer. The weights are empirically determined in terms of the opacity RMSE of coherent lines.
+To demonstrate our results can better preserve the smoothness and completeness of brush strokes, we perform the schemes of Eq \ref{eq:layer1} and Eq \ref{eq:layer_sum} separately on the same set of Chinese paintings and compare the root-mean-square-error (RMSE) of the opacity of the coherent lines on each layer shown in Table 1. The RMSE by Eq \ref{eq:layer_sum} is noticeably less than that by Eq \ref{eq:layer1}. This means that the coherent lines have been embedded into the opacity of each layer. The weights are empirically determined in terms of the opacity RMSE of coherent lines. \\
+To demonstrate the robustness of our approach, including Chinese paintings, we also perform the comparison on some other paintings with highly characteristic brush strokes, such as rosemailing paintings\cite{ellingsgard1978rosemaling} and Vincent van Gogh's paintings\cite{li2012rhythmic}.
 
 \begin{figure}
 	\centering

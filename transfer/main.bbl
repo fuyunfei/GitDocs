@@ -94,6 +94,12 @@ Daniel S{\`y}kora, Ladislav Kavan, Martin {\v{C}}ad{\'\i}k, Ond{\v{r}}ej
   to hand-drawn characters.
 \newblock {\em ACM Transactions on Graphics (TOG)}, 33(2):16, 2014.
 
+\bibitem{xu2006animating}
+Songhua Xu, Yingqing Xu, Sing~Bing Kang, David~H Salesin, Yunhe Pan, and
+  Heung-Yeung Shum.
+\newblock Animating chinese paintings through stroke-based decomposition.
+\newblock {\em ACM Transactions on Graphics (TOG)}, 25(2):239--267, 2006.
+
 \bibitem{smith1997art}
 Ray Smith and EJ~Lloyd.
 \newblock Art school, 1997.
@@ -103,21 +109,17 @@ Ross~B Girshick.
 \newblock {\em Simulating Chinese brush painting: the parametric hairy brush}.
 \newblock ACM, 2004.
 
-\bibitem{xu2006animating}
-Songhua Xu, Yingqing Xu, Sing~Bing Kang, David~H Salesin, Yunhe Pan, and
-  Heung-Yeung Shum.
-\newblock Animating chinese paintings through stroke-based decomposition.
-\newblock {\em ACM Transactions on Graphics (TOG)}, 25(2):239--267, 2006.
-
 \bibitem{chu2004real}
 Nelson~SH Chu and Chiew-Lan Tai.
 \newblock Real-time painting with an expressive virtual chinese brush.
 \newblock {\em IEEE Computer Graphics and applications}, 24(5):76--85, 2004.
 
-\bibitem{da1981chinese}
-Kwo Da-Wei.
-\newblock Chinese brushwork: its history, aesthetics and techniques.
-\newblock 1981.
+\bibitem{li2012rhythmic}
+Jia Li, Lei Yao, Ella Hendriks, and James~Z Wang.
+\newblock Rhythmic brushstrokes distinguish van gogh from his contemporaries:
+  findings via automated brushstroke extraction.
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
+  34(6):1159--1176, 2012.
 
 \bibitem{zhang1999shape}
 Ruo Zhang, Ping-Sing Tsai, James~Edwin Cryer, and Mubarak Shah.
@@ -189,13 +191,6 @@ Jianchao Tan, Jyh-Ming Lien, and Yotam Gingold.
 \newblock Decomposing images into layers via rgb-space geometry.
 \newblock {\em ACM Transactions on Graphics (TOG)}, 36(1):7, 2016.
 
-\bibitem{li2012rhythmic}
-Jia Li, Lei Yao, Ella Hendriks, and James~Z Wang.
-\newblock Rhythmic brushstrokes distinguish van gogh from his contemporaries:
-  findings via automated brushstroke extraction.
-\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
-  34(6):1159--1176, 2012.
-
 \bibitem{matas2004robust}
 Jiri Matas, Ondrej Chum, Martin Urban, and Tom{\'a}s Pajdla.
 \newblock Robust wide-baseline stereo from maximally stable extremal regions.
@@ -232,5 +227,32 @@ Henry Kang, Seungyong Lee, and Charles~K Chui.
 \newblock Coherent line drawing.
 \newblock In {\em Proceedings of the 5th international symposium on
   Non-photorealistic animation and rendering}, pages 43--50. ACM, 2007.
+
+\bibitem{porter1984compositing}
+Thomas Porter and Tom Duff.
+\newblock Compositing digital images.
+\newblock In {\em ACM Siggraph Computer Graphics}, volume~18, pages 253--259.
+  ACM, 1984.
+
+\bibitem{ellingsgard1978rosemaling}
+Nils Ellingsgard, Unn Plahter, and Erling Skaug.
+\newblock Rosemaling i hallingdal.
+\newblock 1978.
+
+\bibitem{nister2008linear}
+David Nist{\'e}r and Henrik Stew{\'e}nius.
+\newblock Linear time maximally stable extremal regions.
+\newblock {\em Computer Vision--ECCV 2008}, pages 183--196, 2008.
+
+\bibitem{cornea2007curve}
+Nicu~D Cornea, Deborah Silver, and Patrick Min.
+\newblock Curve-skeleton properties, applications, and algorithms.
+\newblock {\em IEEE Transactions on visualization and computer graphics},
+  13(3):0530--548, 2007.
+
+\bibitem{weng20062d}
+Yanlin Weng, Weiwei Xu, Yanchen Wu, Kun Zhou, and Baining Guo.
+\newblock 2d shape deformation using nonlinear least squares optimization.
+\newblock {\em The visual computer}, 22(9-11):653--660, 2006.
 
 \end{thebibliography}

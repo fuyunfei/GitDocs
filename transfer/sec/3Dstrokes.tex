@@ -1,20 +1,42 @@
-\chapter{DEPTH MAPS AND “3D STROKES”}
-Since the brush strokes can be extracted individually, it is natural to independently generate the individual depth maps and then merge the depth maps together to form the desired bas-relief. The image-based bas-relief approaches\cite{zeng2014region} \cite{kolomenkin2011reconstruction} perform SFS separately on the segmented regions of an image. Most of segmentation methods work on image intensity. Due to lack of information of the spatial relationship, they always suffer from the issues of over-segmentation or incorrect segmentation. As a result, post-processing with user assistance to manipulate the depth maps is necessary. To illustrate this issue, we applied the  orthogonal SFS method \cite{prados2004unifying} on the segmented Rosemaling painting shown in Figure \ref{ETF} to generate the depth maps. It can be seen that there are lots of over-segmentation, or even incorrect segmentation as shown in Figure \ref{overseg}. The resulting independent depth maps have to be piecewisely merged, rescaled or deleted by users, which is not trivial and tedious. Thus, in our implementation, we employ the orthogonal SFS \cite{prados2004unifying} on the segmented strokes. These extracted strokes take into account the spatial occlusion and are suitable for 3D manipulation. However, the SFS is performed on the opacity of the image rather than the intensity. The brightness equation used in SFS is expressed as,
+\chapter{BAS-RELIEF BASED ON BRUSH STROKE }
+Since the brush strokes can be extracted individually, it is natural to independently generate the individual depth maps and then merge the depth maps together to form the desired bas-relief, see Figure \ref{decom:overview}.It is noteworthy that a depth map can represent a bas-relief model.   In this Chapter, we demonstrate how to generate bas-relief surface from brush strokes, and how it can be modified. We also compare our algorithm against the two most notable 2D image based bas-relief generation algorithm. \\
+
+ In our implementation, we employ the orthogonal SFS \cite{prados2004unifying} on the segmented strokes. These extracted strokes take into account the spatial occlusion and are suitable for manipulation. However, the SFS is performed on the opacity of the image rather than the intensity. The brightness equation used in SFS is expressed as,
 
 \begin{equation*}
 I(x)=\frac{1}{\sqrt{1+\lvert \bigtriangledown h \rvert ^2}}
 \end{equation*}
 
-It can be noted that the higher the intensity I, the smaller the change of depth h. Usually, some brush strokes tend to produce a high intensity in a painting. As a result, if the SFS is performed on intensity, the resulting stroke models will become flat and lack of hierarchy. Moreover, for a region, the boundary height is noticeably higher than its inside. This is because the gradient of the edges is always more than that of the inside. The opacity of image is independent of the intensity (see Figure \ref{histo}). Each stroke has an appropriate distribution of opacity, which is in favor of a layered look.
-
-
-To make the bas-relief more inflated,we rewrite the Eikonal Equation as,
+It can be noted that the higher the intensity I, the smaller the change of depth h. Usually, some brush strokes tend to produce a high intensity in a painting. As a result, if the shape from shading algorithm is performed on intensity, the resulting stroke models will become flat and lack of hierarchy. Moreover, for a region, the boundary height is noticeably higher than its inside. This is because the gradient of the edges is always more than that of the inside. The opacity of image is independent of the color intensity (see Figure \ref{histo}). Each stroke has an appropriate distribution of opacity, which is in favor of a layered look, so we reformulate the equation : 
+\begin{equation*}
+\alpha(x)=\frac{1}{\sqrt{1+\lvert \bigtriangledown h \rvert ^2}}
+\end{equation*}
+$\alpha(x)$ is the opacity value of pixel $x$ on a brush stroke. 
+To make the bas-relief more inflated,we rewrite the as,
 
 \begin{equation}
-\lVert \bigtriangledown h \rVert = \sqrt{\frac{1}{\lVert I(x) \rVert ^2}-1+ \Delta}
+\lVert \bigtriangledown h \rVert = \sqrt{\frac{1}{\lVert \alpha(x) \rVert ^2}-1+ \Delta}
 \end{equation}
-where $\Delta$ is a positive displacement. This modification may make the surface inflated.
-Moreover, it is desirable to allow the users to recompose the brush stroke models in 3D space for secondary creation purposes. To highlight the term of “3D strokes”, we present three approaches based on the generated “3D stroke” models here.\newline
+where $\Delta$ is a positive displacement. This modification may make the surface inflated. By solving this equation, we can generated a depth map for each brush stroke. As show in Figure \ref{strokerelief}, we input the opacity map of a decomposed layer, and from that layer we extract three brush strokes shown in different color,and by apply our algorithm we can generate bas-reliefs(depth maps) from each one of the brush strokes on this layers, and by generate bas-reliefs from all brush strokes, and merge them together, we automatically generate a bas-relief from the input Chinese painting. 
+To differentiate the bas-relief generated form a single stroke and the final combined bas-relief, we use the term "stroke-relief" to indicate a bas-relief(depth map) generated from a single stroke. And just like a Chinese painting can be regarded as a union of brush strokes \cite{xu2006animating} ,in our approach, a bas-relief can be regarded as a union of stroke-relief.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm]{strokerelief.png}
+	\caption{Bas-relief generation from brush strokes}
+	\label{strokerelief}
+\end{figure}
+
+
+
+\section{Comparison}
+This section compares our algorithm against the two most notable 2D image based bas-relief methods, 
+
+The image-based bas-relief approaches\cite{zeng2014region} \cite{kolomenkin2011reconstruction} perform shape from shading algorithm separately on the segmented regions of an image.Most of segmentation methods work on image intensity. Due to lack of information of the spatial relationship, they always suffer from the issues of over-segmentation or incorrect segmentation. As a result, post-processing with user assistance to manipulate the depth maps is necessary. To illustrate this issue, we applied the  orthogonal SFS method \cite{prados2004unifying} on the segmented Rosemaling painting shown in Figure \ref{ETF} to generate the depth maps. It can be seen that there are lots of over-segmentation, or even incorrect segmentation as shown in Figure \ref{overseg}.
+
+
+\section{Manipulate Bas-relief of stroke}
+
+Moreover, it is desirable to allow the users to manipulate the brush stroke models for secondary creation purposes. We present three approaches based on the generated bar-relief models here.
 
 \textbf{Rising a Stroke}  
 
@@ -28,11 +50,11 @@ where $H_i=\frac{1}{\lvert S_i \rvert}\sum_{x\in S_i} h_i(x)  $, and d controls 
 However, the scheme of Eq \ref{eq:raising} cannot settle the issue of two strokes obstructing each other. For example, stroke A partially obstructs the other stroke B while it may be partially obstructed by B. This can be resolved by the following stitching approach.\newline
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=15cm]{risestroke.pdf}
-	\caption{Rising a stroke}
+	\includegraphics[width=15cm]{risestroke.png}
+	\caption{Rising strokes}
 	\label{raising}
 	\medskip
-	The selected stroke is rising from bottom to top in layer order. \\There are 4 layers.
+	The selected strokes is rising from bottom to top in layer order. \\There are 4 layers.
 \end{figure}
 
 \textbf{Stitching one Stroke on Another one} 
@@ -94,8 +116,4 @@ Herein, we expand the matrices of $L,M,C$ through adding zero elements, such tha
 \end{figure}
 
 \textbf{Remark} Compared with image-based bas-relief generation, the main advantage of our approach is the introduction of “3D strokes”. Spatial occlusion offers an important cue in conveying the spatial relationship of the depicted objects and the depth information. Unlike the usual image segmentation problems, our method takes into account spatial occlusion in our stroke segmentation. As a result, over-segmentation and incorrect segmentation are largely eliminated. Moreover, the extracted “3D strokes” both help us sort out the stroke order and provide us a chance to rearrange the strokes as needed. This is in favor of further artistic creation in bas-relief design.
-
-
-
-
 

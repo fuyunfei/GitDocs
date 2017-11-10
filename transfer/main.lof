@@ -1,3 +1,24 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces Pipeline Overview\relax }}{2}{figure.caption.2}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces OVERVIEW OF PROPOSED METHOD\relax }}{17}{figure.caption.6}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Geometry of input image pixels in RGB-space\relax }}{20}{figure.caption.7}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Convex hull of input image\relax }}{21}{figure.caption.8}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Decomposition layers \relax }}{21}{figure.caption.9}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Edge Tangent Flow\relax }}{23}{figure.caption.10}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Comparison of layer decomposition \relax }}{24}{figure.caption.11}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Edge Tangent Flow field and coherent lines of the painting.\relax }}{25}{figure.caption.12}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Comparison of layer decomposition before and after using $E_{egde}$ in Eq \ref {eq:layer1}; \relax }}{25}{figure.caption.13}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Comparison between transparency and intensity of layer2\relax }}{26}{figure.caption.14}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.2}{\ignorespaces The opacity maps, and MSER regions of three layers by the modified MSERs.\relax }}{32}{figure.caption.17}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Image editing based on brush strokes\relax }}{35}{figure.caption.18}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Bas-relief generation from brush strokes\relax }}{37}{figure.caption.19}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Rising strokes\relax }}{39}{figure.caption.20}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Strokes segmented in selected region\relax }}{40}{figure.caption.21}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces The result of stitching strokes\relax }}{41}{figure.caption.22}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces The shape of a stroke is changed\relax }}{42}{figure.caption.23}
+\addvspace {10\p@ }
