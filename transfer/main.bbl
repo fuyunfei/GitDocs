@@ -64,6 +64,12 @@ Marc Alexa and Wojciech Matusik.
 \newblock Reliefs as images.
 \newblock {\em ACM Trans. Graph.}, 29(4):60--1, 2010.
 
+\bibitem{wu2008interactive}
+Tai-Pang Wu, Jian Sun, Chi-Keung Tang, and Heung-Yeung Shum.
+\newblock Interactive normal reconstruction from a single image.
+\newblock In {\em ACM Transactions on Graphics (TOG)}, volume~27, page 119.
+  ACM, 2008.
+
 \bibitem{belhumeur1999bas}
 Peter~N Belhumeur, David~J Kriegman, and Alan~L Yuille.
 \newblock The bas-relief ambiguity.
@@ -243,16 +249,5 @@ Nils Ellingsgard, Unn Plahter, and Erling Skaug.
 David Nist{\'e}r and Henrik Stew{\'e}nius.
 \newblock Linear time maximally stable extremal regions.
 \newblock {\em Computer Vision--ECCV 2008}, pages 183--196, 2008.
-
-\bibitem{cornea2007curve}
-Nicu~D Cornea, Deborah Silver, and Patrick Min.
-\newblock Curve-skeleton properties, applications, and algorithms.
-\newblock {\em IEEE Transactions on visualization and computer graphics},
-  13(3):0530--548, 2007.
-
-\bibitem{weng20062d}
-Yanlin Weng, Weiwei Xu, Yanchen Wu, Kun Zhou, and Baining Guo.
-\newblock 2d shape deformation using nonlinear least squares optimization.
-\newblock {\em The visual computer}, 22(9-11):653--660, 2006.
 
 \end{thebibliography}

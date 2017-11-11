@@ -9,49 +9,50 @@ Repeated entry---line 883 of file ref.bib
 I'm skipping whatever remains of this entry
 Warning--can't use both volume and number fields in weyrich2007digital
 Warning--can't use both volume and number fields in kerber2012computer
+Warning--can't use both volume and number fields in wu2008interactive
 Warning--can't use both volume and number fields in richardt2014vectorising
 Warning--can't use both volume and number fields in mccann2012soft
 Warning--can't use both volume and number fields in porter1984compositing
 Warning--empty journal in ellingsgard1978rosemaling
-You've used 44 entries,
+You've used 43 entries,
             1791 wiz_defined-function locations,
-            704 strings with 11060 characters,
-and the built_in function-call counts, 12835 in all, are:
-= -- 1229
-> -- 517
-< -- 28
-+ -- 188
-- -- 144
-* -- 874
-:= -- 1866
-add.period$ -- 146
-call.type$ -- 44
-change.case$ -- 42
+            696 strings with 10816 characters,
+and the built_in function-call counts, 12609 in all, are:
+= -- 1208
+> -- 503
+< -- 30
++ -- 183
+- -- 140
+* -- 846
+:= -- 1822
+add.period$ -- 144
+call.type$ -- 43
+change.case$ -- 41
 chr.to.int$ -- 0
 cite$ -- 50
-duplicate$ -- 605
-empty$ -- 1216
-format.name$ -- 144
-if$ -- 2981
+duplicate$ -- 606
+empty$ -- 1196
+format.name$ -- 140
+if$ -- 2945
 int.to.chr$ -- 0
-int.to.str$ -- 44
-missing$ -- 43
-newline$ -- 222
-num.names$ -- 44
-pop$ -- 142
+int.to.str$ -- 43
+missing$ -- 42
+newline$ -- 217
+num.names$ -- 43
+pop$ -- 145
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 354
+skip$ -- 359
 stack$ -- 0
-substring$ -- 956
-swap$ -- 237
-text.length$ -- 28
+substring$ -- 909
+swap$ -- 246
+text.length$ -- 30
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 6
-while$ -- 135
-width$ -- 46
-write$ -- 503
+warning$ -- 7
+while$ -- 131
+width$ -- 45
+write$ -- 494
 (There was 1 error message)

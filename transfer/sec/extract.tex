@@ -1,5 +1,5 @@
 \clearpage
-\chapter{EXTRACTION OF BRUSH STROKES}
+\chapter{EXTRACTION OF BRUSH STROKES}\label{extract}
 To generated bas-relief model from brush strokes,we need to first extract brush strokes.In this chapter, we demonstrate how to extract brush strokes from generated layers by modified Maximally Stable Extremal Regions (MSERs) algorithm, and we show that our optimization is more suitable for brush stroke extraction. In this chapter, the default MSERs algorithm and our modified algorithm are explained and their main characteristics compared. By successfully extract brush strokes, our algorithm can also be used in image editing,see section \ref{editing}.\\
 The Maximally Stable Extremal Regions (MSERs) proposed in \cite{donoser2006efficient} and \cite{nister2008linear}for feature detection and image segmentation. A MSER is a 2D region detected by MSERs algorithm.  Generally,a brush stroke is considered as a closed stable region on paintings and it might be painted on different scales. MSERs have properties that form their superior performance as stable segmentation. The segmented MSER is closed under continuous geometric transformations and is invariant to affine intensity changes. Furthermore MSER are detected at different scales. So, we employ the Maximally Stable Extremal Regions (MSERs) proposed in \cite{donoser2006efficient} and \cite{nister2008linear} to extract brush strokes. MSERs algorithm requires a distinct difference between background and foreground while allowing a small variation of intensity within the selected stroke region. Usually, the brush strokes on the decomposed layers satisfy this requirement.
 However, MSERs may fail in segmentation with the following scenarios,\\ 
@@ -9,6 +9,26 @@ However, MSERs may fail in segmentation with the following scenarios,\\
 (4) Moreover, like the other existing segmentation approaches, the MSERs algorithm encounters over-segmentation issue as well. \\
 To tackle these challenges, the coherent lines \cite{kang2007coherent} is introduced into MSERs, which both enhances the edges of strokes and preserves the completeness of strokes. For completeness sake, we briefly address MSERs algorithm and then address our modification.
 \section{MSERs Algorithm}
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{5.png}
+		\caption{input image}
+	\end{subfigure}
+	~  
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{inten_mser.png}
+		\caption{MSERs of the input image}	
+	\end{subfigure}
+	\label{modifi_mser}
+	
+	Perform the original MSERs on the intensity of image,different color indicates different regions.
+\end{figure}
+
+
 MSERs can denote a set of distinguished regions that are detected in an intensity image. All of these regions are defined by an extremal property of the intensity function in the region and on its outer boundary, i.e. for a given extremal region S, the internal intensity is more than the intensity of boundary of S,
 
 \[ \forall p \in S,\forall q \in \partial S , \longrightarrow I(p) \geq I(q)\]
@@ -20,32 +40,9 @@ Changing threshold, the extremal regions may further split or merge. The resulti
 
 where $ \left | .  \right |$  denotes the cardinality, $ S_{i}^{g} $  is the i-th region which is obtained by thresholding at an intensity value g and $\Delta $ is a stability range parameter. $  g-\Delta $ and $ g+\Delta $ are obtained by moving upward and downward respectively in the component tree from the region $ S_{i} $ until a region with intensity value   or  is found. $ \left \{ i,j,k \right \}$ are the indices of nodes of the component tree. MSERs correspond to those nodes of the component tree that have a stability value $\gamma$, which is a local minimum along the path to the root of the tree.
 
-\begin{figure}[H]
- 	\centering
- 	\begin{subfigure}[b]{0.4\textwidth}
-		\centering
- 		\includegraphics[width=\textwidth]{5.png}
- 		\caption{input image}
- 	\end{subfigure}
- 		~  
- 	\begin{subfigure}[b]{0.4\textwidth}
-		\centering
-	  	\includegraphics[width=\textwidth]{inten_mser.png}
- 		\caption{MSERs of the input image}	
- 	\end{subfigure}
- 	\label{modifi_mser}
-	Perform the original MSERs on the intensity of image,different color indicates different regions.
-\end{figure}
-
-
 
 \section{Modified MSERs Algorithm}
-\begin{figure}[H]
-	\centering 
-	\includegraphics[width=10cm]{layer_sum.png}
-	\caption{The opacity maps, and MSER regions of three layers by the modified MSERs.}
-	\label{mser:alpha}
-\end{figure}
+
 In terms of the definition of the area change rate $\gamma$, MSERs may fail in segmentation with the following scenarios,\\
 (1) The brush stroke with the intensity very close to the background; \\
 (2) Adjacent brush strokes painted by different colors with the similar intensity;\\
@@ -74,6 +71,23 @@ To deal with the over-segmentation issue, the coherent lines play an important r
 where $Q$ denotes the set of pixels which stay on the coherent lines and $Q \subset \partial S $. The third modification is to take into account the change of coherent lines to the boundary of $S$, i.e. the third term penalizes that a small portion of the boundary $\partial S$ is occupied by coherent lines.
 
 Figure \ref{mser:alpha} shows the segmentation results by the modified MSERs, which correspond to brush strokes. It can be noted that performing MSERs on the intensity of image inevitable yields over-segmentations. Performing the modified MSERs on the opacity of layers, the strokes tend to complete and smooth within one layer. Moreover, some small regions with the distinct opacity values against neighboring areas have been filtered out, and no region is selected from background. 
+\begin{figure}[H]
+	\centering 
+	\includegraphics[width=10cm]{layer_sum.png}
+	\caption{The opacity maps, and MSER regions of three layers by the modified MSERs.}
+	\label{mser:alpha}
+\end{figure}
+
+\section{Comparison and Evaluation of brush stroke extraction} \label{comparevan}
+To the best of our knowledge, there is lack of study on automatic brush strokes extraction. Li et al.\cite{li2012rhythmic} present brush stroke extraction method for Vincent van Gogh's painting. To numerically evaluate their brushstroke extraction algorithm, they generated manually marked brushstrokes using 10 example regions from paintings in the collection.Based on the manually marked examples, they define two parameters which can be measured in order to evaluate the accuracy of extracted brush stroke and,therefore, can be used to compare between their method and ours: valid rate and detection rate.\\
+Valid rate:the percentage of valid automatically extracted brushstrokes. \\ Detection rate: The percentage of detected manual brushstrokes . \\
+Even through our brush stroke extraction algorithm is not designed only for van Gogh's paintings, for fair comparison, we use the van Gogh's painting listed in their research. As shown in Table 2,the valid rate and detection rate of our method is noticeably higher than Li et al.'s method \cite{li2012rhythmic} (The paint ID is given by Li et al.'s work). 
+
+\begin{figure}[H]
+	\includegraphics[width=14cm]{comstroke.pdf}
+	\label{table2}
+\end{figure}
+
 
 
 \section{Image editing based on brush strokes}\label{editing}

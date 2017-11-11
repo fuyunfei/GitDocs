@@ -147,9 +147,6 @@ Given a ETF field $t(x)$, the flow-guided anisotropic Difference of Gaussian (Do
 	\caption{Comparison between transparency and intensity of layer2}
 	\label{histo}
 \end{figure}
-
-
-
  
 To preserve the stroke edges, we assume that the opacity along the coherent lines is consistent, i.e. $min \int_{l}\Arrowvert \bigtriangledown\alpha \Arrowvert^2 dx $, where l denotes the collection of coherent lines. Hence, the constraint term is defined by applying Laplacian operator to the opacity along the coherent lines,
 
@@ -165,14 +162,15 @@ E=\omega_{polynomial}E_{polynomial}+\omega_{opaque}E_{opaque}+\omega_{flow}E_{fl
 \label{eq:layer_sum}
 \end{equation} 
 
-where $\omega_{flow}=100, \omega_{edge}=20 $ for all our examples. Figure 8 shows an evaluation of the effect of changing weights.
-
-To demonstrate our results can better preserve the smoothness and completeness of brush strokes, we perform the schemes of Eq \ref{eq:layer1} and Eq \ref{eq:layer_sum} separately on the same set of Chinese paintings and compare the root-mean-square-error (RMSE) of the opacity of the coherent lines on each layer shown in Table 1. The RMSE by Eq \ref{eq:layer_sum} is noticeably less than that by Eq \ref{eq:layer1}. This means that the coherent lines have been embedded into the opacity of each layer. The weights are empirically determined in terms of the opacity RMSE of coherent lines. \\
-To demonstrate the robustness of our approach, including Chinese paintings, we also perform the comparison on some other paintings with highly characteristic brush strokes, such as rosemailing paintings\cite{ellingsgard1978rosemaling} and Vincent van Gogh's paintings\cite{li2012rhythmic}.
+We select the value of weights based on calculate the root-mean-square-error (RMSE) of the opacity of the coherent lines on each layer.By minimizing the RMSE, we set $\omega_{polynomial}=365, \omega_{opaque}=0.1,\omega_{flow}=100, \omega_{edge}=20 $ . 
+\section{Comparison of layer decompostion} \label{comparelayer}
+To demonstrate our results can better preserve the smoothness and completeness of brush strokes, we perform the schemes of Eq \ref{eq:layer1} and Eq \ref{eq:layer_sum} separately on the same set of  paintings and compare the root-mean-square-error (RMSE) of the opacity of the coherent lines on each layer shown in Table 1. The RMSE by Eq \ref{eq:layer_sum} is noticeably less than that by Eq \ref{eq:layer1}. This means that the coherent lines have been embedded into the opacity of each layer. As we mentioned, the weights in equation \ref{eq:layer_sum} are empirically determined in terms of the opacity RMSE of coherent lines. \\
+To demonstrate the robustness of our approach, including Chinese paintings, we also perform the comparison on some other paintings with highly characteristic brush strokes, such as rosemailing paintings\cite{ellingsgard1978rosemaling} and Vincent van Gogh's paintings\cite{li2012rhythmic} . 
 
 \begin{figure}
 	\centering
 	\includegraphics[width=17cm]{rmse.pdf}
+	\label{table1}
 
 \end{figure}
 
