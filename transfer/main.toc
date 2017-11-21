@@ -11,25 +11,25 @@
 \contentsline {subsection}{\numberline {2.2.1}Photograph Based Methods}{12}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Line Drawing Based Methods}{13}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Gradient and Intensity Based Methods}{14}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Brush Stroke Segmentation}{14}{section.2.3}
+\contentsline {section}{\numberline {2.3}Brush Stroke Extraction}{14}{section.2.3}
 \contentsline {chapter}{\numberline {3}OVERVIEW OF PROPOSED METHOD}{16}{chapter.3}
 \contentsline {chapter}{\numberline {4}LAYER DECOMPOSITION}{19}{chapter.4}
 \contentsline {section}{\numberline {4.1}Identify Paint Colors}{20}{section.4.1}
-\contentsline {section}{\numberline {4.2}Layer Decomposition Scheme}{21}{section.4.2}
+\contentsline {section}{\numberline {4.2}Tan et al.'s Layer Decomposition Scheme}{21}{section.4.2}
 \contentsline {section}{\numberline {4.3}Our Modified Layer Decomposition}{23}{section.4.3}
-\contentsline {section}{\numberline {4.4}Comparison of layer decompostion}{27}{section.4.4}
+\contentsline {section}{\numberline {4.4}Comparison and Evaluation of Layer Decomposition}{27}{section.4.4}
 \contentsline {chapter}{\numberline {5}EXTRACTION OF BRUSH STROKES}{29}{chapter.5}
 \contentsline {section}{\numberline {5.1}MSERs Algorithm}{30}{section.5.1}
 \contentsline {section}{\numberline {5.2}Modified MSERs Algorithm}{31}{section.5.2}
-\contentsline {section}{\numberline {5.3}Comparison and Evaluation of Brush Stroke Extraction}{33}{section.5.3}
+\contentsline {section}{\numberline {5.3}Comparison and Evaluation of Brush Stroke Extraction}{34}{section.5.3}
 \contentsline {section}{\numberline {5.4}Image editing based on brush strokes}{36}{section.5.4}
 \contentsline {chapter}{\numberline {6}BAS-RELIEF GENERATION}{38}{chapter.6}
 \contentsline {section}{\numberline {6.1}Comparisons of Bas-relief Generation}{40}{section.6.1}
 \contentsline {chapter}{\numberline {7}RESULTS}{42}{chapter.7}
-\contentsline {section}{\numberline {7.1}More Results}{45}{section.7.1}
-\contentsline {chapter}{\numberline {8}Conclusions and Future Work}{48}{chapter.8}
-\contentsline {section}{\numberline {8.1}Conclusions}{48}{section.8.1}
-\contentsline {section}{\numberline {8.2}Future Work}{49}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}Refine Current Algorithm}{49}{subsection.8.2.1}
-\contentsline {subsection}{\numberline {8.2.2}Application in 3D Painting}{49}{subsection.8.2.2}
-\contentsline {section}{\numberline {8.3}Proposed timescale for the work:}{51}{section.8.3}
+\contentsline {section}{\numberline {7.1}More Results}{46}{section.7.1}
+\contentsline {chapter}{\numberline {8}Conclusions and Future Work}{49}{chapter.8}
+\contentsline {section}{\numberline {8.1}Conclusions}{49}{section.8.1}
+\contentsline {section}{\numberline {8.2}Future Work}{50}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Refine Current Algorithm}{50}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Application }{50}{subsection.8.2.2}
+\contentsline {section}{\numberline {8.3}Proposed timescale for the work:}{52}{section.8.3}

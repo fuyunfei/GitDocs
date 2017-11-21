@@ -4,22 +4,26 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of Proposed Method\relax }}{17}{figure.caption.6}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Geometry of input image pixels in RGB-space\relax }}{20}{figure.caption.7}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Geometry of input Chinese painting pixels in RGB-space\relax }}{20}{figure.caption.7}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Convex hull of input image\relax }}{21}{figure.caption.8}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Decomposition layers \relax }}{21}{figure.caption.9}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Decomposed layers \relax }}{21}{figure.caption.9}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Edge Tangent Flow\relax }}{23}{figure.caption.10}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Comparison of layer decomposition \relax }}{24}{figure.caption.11}
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Edge Tangent Flow field and coherent lines of the painting.\relax }}{25}{figure.caption.12}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Comparison of layer decomposition before and after using $E_{egde}$ in Eq \ref {eq:layer1}; \relax }}{25}{figure.caption.13}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Comparison of layer decomposition before and after using $E_{egde}$ in Eq.\ref {eq:layer1}; \relax }}{25}{figure.caption.13}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Comparison between opacity and intensity of layer2\relax }}{26}{figure.caption.14}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.2}{\ignorespaces The opacity maps, and MSER regions of three layers by the modified MSERs.\relax }}{33}{figure.caption.17}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces The opacity maps, and brush strokes extracted on three layers by the modified MSERs.\relax }}{33}{figure.caption.17}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Brush strokes extraction in Li et al.'s work\relax }}{34}{figure.caption.18}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Brush strokes extraction by our method\relax }}{35}{figure.caption.19}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Image editing based on brush strokes\relax }}{37}{figure.caption.21}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Brush strokes extraction by our method; the upper row shows the opacity maps of each layer\relax }}{35}{figure.caption.19}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Insert object between brush strokes\relax }}{36}{figure.caption.21}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Image editing based on extracted brush strokes\relax }}{37}{figure.caption.22}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Bas-relief generation from brush strokes\relax }}{39}{figure.caption.22}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Bas-relief generation from Chinese paintings\relax }}{40}{figure.caption.23}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Bas-relief generation from brush strokes\relax }}{39}{figure.caption.23}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Bas-relief generation from Chinese paintings\relax }}{40}{figure.caption.24}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces The green color on the headdress is wrongly separated into second layer\relax }}{43}{figure.caption.25}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces The color of gourd is separated into two layers\relax }}{44}{figure.caption.26}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Brush strokes highly blended with painting colors\relax }}{44}{figure.caption.27}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces 3D brush painting on surface level set\relax }}{50}{figure.caption.28}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces 3D brush painting on surface level set\relax }}{51}{figure.caption.32}
