@@ -1,0 +1,59 @@
+
+\section{ Relief Generation}
+
+In Chinese paintings, each brushstroke is often introduced to depict something specific in the real world.
+Thus, the output of our stroke-based decomposition of these paintings is a set of graphical objects that are meaningful with regard to the set of real objects the paintings depict. It is natural to generate depth information from brushstrokes,here,we present a relief generation method based brushstrokes  \cite{xu2006animating} . \\
+And based on \cite{yeh2017interactive}'s method, we can successfully generate high relief model from brush strokes. 
+
+\subsection{comparison}
+
+Previous work focused on relief generation from images are mainly based on photos.The method proposed in \cite{yeh2017interactive} was design for reconstruct high-relief 3D models from a single input image of organic objects with nontrivial shape profile. 
+
+Our relief generation result is similar to Yeh et al.’s method, with the difference in three steps:  being that we replace the segmentation 
+pigments in the extracted palette with other KM pigments (from
+Okumura [2005]) and re-render the image, creating different mixed
+
+colors in the style of real traditional media paints. Fig. 13a shows
+
+three examples. To enable a more direct comparison, we use our
+
+extracted palette RGB colors as the layer colors in Tan2016. In the
+
+cat painting, the KM mixing weight map for the blue pigment is
+
+sparse and therefore the recoloring effect is localized on the body of
+
+the cat. The weight map from Tan2016 has non-zero values in the
+
+background resulting in recoloring artifacts. F
+
+
+
+Next, we compare our results with the most closely-related recent work \cite{yeh2017interactive}. In particular, we compare the visual plausibility of the results, with large rotations from the original viewing direction (please refer to the supplementary video, available online, for animated versions of the comparison). 
+   
+Following with our method, we compare our results with \cite{yeh2017interactive}'s method at three aspects: segmentation, local layering, and inflation.
+
+Segmentation: 
+
+As a comparison , our results can preserve the thin and complex shapes of brushstrokes     
+
+Inflation: 
+Yeh et al's method is mainly designed for reconstructing smooth and organic shapes, where the inflation model assumes smooth surfaces, while in our algorithm, we use opacity to generate the bas-relief, which maintains the details of brush strokes better, see Figure .
+
+Local layering: 
+Each brush stroke covers a region on the canvas and they may overlap
+each other, some quite heavily in a painting. 
+
+Texture:  
+Since \cite{yeh2017interactive}
+
+
+
+particularly 
+
+
+\subsection{jushi}
+
+Our algorithm uses  , in contrast to previous  work [Tan et al. 2016] which solves a similar problem using linear RGB instead. Intuitively, we would expect that our model would be able to reconstruct paintings at lower error with fewer parameters, and the experiment we show in Fig. 8 confirms that. 
+
+We found that the 
