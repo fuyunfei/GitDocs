@@ -1,0 +1,33 @@
+\begin{thebibliography}{1}
+
+\bibitem{prados2004unifying}
+E.~Prados and O.~Faugeras.
+\newblock Unifying approaches and removing unrealistic assumptions in shape
+  from shading: Mathematics can help.
+\newblock {\em Computer Vision-ECCV 2004}, pp. 141--154, 2004.
+
+\bibitem{sethian1999level}
+J.~A. Sethian.
+\newblock {\em Level set methods and fast marching methods: evolving interfaces
+  in computational geometry, fluid mechanics, computer vision, and materials
+  science}, vol.~3.
+\newblock Cambridge university press, 1999.
+
+\bibitem{xu2006animating}
+S.~Xu, Y.~Xu, S.~B. Kang, D.~H. Salesin, Y.~Pan, and H.-Y. Shum.
+\newblock Animating chinese paintings through stroke-based decomposition.
+\newblock {\em ACM Transactions on Graphics (TOG)}, 25(2):239--267, 2006.
+
+\bibitem{yeh2017interactive}
+C.-K. Yeh, S.-Y. Huang, P.~K. Jayaraman, C.-W. Fu, and T.-Y. Lee.
+\newblock Interactive high-relief reconstruction for organic and double-sided
+  objects from a photo.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  23(7):1796--1808, 2017.
+
+\bibitem{zeng2014region}
+Q.~Zeng, R.~R. Martin, L.~Wang, J.~A. Quinn, Y.~Sun, and C.~Tu.
+\newblock Region-based bas-relief generation from a single image.
+\newblock {\em Graphical Models}, 76(3):140--151, 2014.
+
+\end{thebibliography}

@@ -1,0 +1,26 @@
+\begin{thebibliography}{1}
+
+\bibitem{liu2013stereoscopizing}
+X.~Liu, X.~Mao, X.~Yang, L.~Zhang, and T.-T. Wong.
+\newblock Stereoscopizing cel animations.
+\newblock {\em ACM Transactions on Graphics (TOG)}, 32(6):223, 2013.
+
+\bibitem{xu2006animating}
+S.~Xu, Y.~Xu, S.~B. Kang, D.~H. Salesin, Y.~Pan, and H.-Y. Shum.
+\newblock Animating chinese paintings through stroke-based decomposition.
+\newblock {\em ACM Transactions on Graphics (TOG)}, 25(2):239--267, 2006.
+
+\bibitem{yeh2017interactive}
+C.-K. Yeh, S.-Y. Huang, P.~K. Jayaraman, C.-W. Fu, and T.-Y. Lee.
+\newblock Interactive high-relief reconstruction for organic and double-sided
+  objects from a photo.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  23(7):1796--1808, 2017.
+
+\bibitem{yeh20152}
+C.-K. Yeh, P.~K. Jayaraman, X.~Liu, C.-W. Fu, and T.-Y. Lee.
+\newblock 2.5 d cartoon hair modeling and manipulation.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  21(3):304--314, 2015.
+
+\end{thebibliography}
